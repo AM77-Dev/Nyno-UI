@@ -520,7 +520,42 @@ input[type='submit'],
             color: $light;
         }
     }
+
+    &.dark-purple{
+        border-color: $dark-purple;
+        background: transparent;
+        color:  $dark-purple;
     
+        &._dark:hover{
+            border-color: $darker-purple;
+            background: $darker-purple;
+            color: $lighter
+        }
+    
+        &._light:hover{
+            border-color: $light-purple;
+            background: $light-purple;
+            color: $light
+        }
+    }
+    
+    &.light-purple{
+        border-color: $light-purple;
+        background: transparent;
+        color:  $light-purple;
+    
+        &._dark:hover{
+            border-color: $dark-purple;
+            background: $dark-purple;
+            color: $light;
+        }
+    
+        &._light:hover{
+            border-color: $lighter-purple;
+            background: $lighter-purple;
+            color: $light;
+        }
+    }
 
     &.pink{
         border-color: $pink;
