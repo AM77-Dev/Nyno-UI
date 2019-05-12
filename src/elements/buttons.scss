@@ -441,3 +441,63 @@ input[type='submit'],
         }
     } */
 }
+
+.btn-o{
+    border: 1px solid $light;
+    background: transparent;
+
+    &.pink{
+        border-color: $pink;
+        background: transparent;
+        color:  $pink;
+        
+        &._dark:hover{
+            border-color: $dark-pink;
+            background: $dark-pink;
+            color: $lighter
+        }
+    
+        &._light:hover{
+            border-color: $light-pink;
+            background: $light-pink;
+            color: $light
+        }
+    }
+    
+    &.dark-pink{
+        border-color: $dark-pink;
+        background: transparent;
+        color:  $dark-pink;
+
+        &._dark:hover{
+            border-color: $darker-pink;
+            background: $darker-pink;
+            color: $lighter
+        }
+    
+        &._light:hover{
+            border-color: $light-pink;
+            background: $light-pink;
+            color: $light
+        }
+    }
+    
+    &.light-pink{
+        border-color: $light-pink;
+        background: transparent;
+        color:  $light-pink;
+
+        &._dark:hover{
+            border-color: $dark-pink;
+            background: $dark-pink;
+            color: $light;
+        }
+    
+        &._light:hover{
+            border-color: $lighter-pink;
+            background: $lighter-pink;
+            color: $light;
+        }
+    }
+}
+
