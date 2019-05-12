@@ -484,6 +484,42 @@ input[type='submit'],
             color: $light;
         }
     }
+
+    &.dark-blue{
+        border-color: $dark-blue;
+        background: transparent;
+        color:  $dark-blue;
+    
+        &._dark:hover{
+            border-color: $darker-blue;
+            background: $darker-blue;
+            color: $lighter
+        }
+    
+        &._light:hover{
+            border-color: $light-blue;
+            background: $light-blue;
+            color: $light
+        }
+    }
+    
+    &.light-blue{
+        border-color: $light-blue;
+        background: transparent;
+        color:  $light-blue;
+    
+        &._dark:hover{
+            border-color: $dark-blue;
+            background: $dark-blue;
+            color: $light;
+        }
+    
+        &._light:hover{
+            border-color: $lighter-blue;
+            background: $lighter-blue;
+            color: $light;
+        }
+    }
     
 
     &.pink{
