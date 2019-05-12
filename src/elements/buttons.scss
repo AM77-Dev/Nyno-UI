@@ -715,6 +715,42 @@ input[type='submit'],
             color: $light;
         }
     }
+
+    &.dark-teal{
+        border-color: $dark-teal;
+        background: transparent;
+        color:  $dark-teal;
+    
+        &._dark:hover{
+            border-color: $darker-teal;
+            background: $darker-teal;
+            color: $lighter
+        }
+    
+        &._light:hover{
+            border-color: $light-teal;
+            background: $light-teal;
+            color: $light
+        }
+    }
+    
+    &.light-teal{
+        border-color: $light-teal;
+        background: transparent;
+        color:  $light-teal;
+    
+        &._dark:hover{
+            border-color: $dark-teal;
+            background: $dark-teal;
+            color: $light;
+        }
+    
+        &._light:hover{
+            border-color: $lighter-teal;
+            background: $lighter-teal;
+            color: $light;
+        }
+    }
     
     &.dark-pink{
         border-color: $dark-pink;
