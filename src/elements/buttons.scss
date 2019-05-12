@@ -446,6 +446,46 @@ input[type='submit'],
     border: 1px solid $light;
     background: transparent;
 
+
+
+
+    &.dark-green{
+        border-color: $dark-green;
+        background: transparent;
+        color:  $dark-green;
+    
+        &._dark:hover{
+            border-color: $darker-green;
+            background: $darker-green;
+            color: $lighter
+        }
+    
+        &._light:hover{
+            border-color: $light-green;
+            background: $light-green;
+            color: $light
+        }
+    }
+    
+    &.light-green{
+        border-color: $light-green;
+        background: transparent;
+        color:  $light-green;
+    
+        &._dark:hover{
+            border-color: $dark-green;
+            background: $dark-green;
+            color: $light;
+        }
+    
+        &._light:hover{
+            border-color: $lighter-green;
+            background: $lighter-green;
+            color: $light;
+        }
+    }
+    
+
     &.pink{
         border-color: $pink;
         background: transparent;
