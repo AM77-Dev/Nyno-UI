@@ -27,4 +27,68 @@
         max-width: 100%;
         padding: 5px;
     }
+
+
+    @for $i from 1 through $count-col {
+        .col-#{$i} {
+            flex-basis: ($i / $count-col) * 100%;
+            max-width: ($i / $count-col) * 100%;
+        }
+
+        .col-offset-#{$i} {
+            margin-left: ($i / $count-col) * 100%;
+        }
+    }
+
+    @mixin media-querie-min($small-screen) {
+        @for $i from 1 through $count-col {
+            .col-s-#{$i} {
+                flex-basis: ($i / $count-col) * 100%;
+                max-width: ($i / $count-col) * 100%;
+            }
+    
+            .col-s-offset-#{$i} {
+                margin-left: ($i / $count-col) * 100%;
+            }
+        }
+    }
+
+    @mixin media-querie-min($medium-screen) {
+        @for $i from 1 through $count-col {
+            .col-m-#{$i} {
+                flex-basis: ($i / $count-col) * 100%;
+                max-width: ($i / $count-col) * 100%;
+            }
+    
+            .col-m-offset-#{$i} {
+                margin-left: ($i / $count-col) * 100%;
+            }
+        }
+    }
+
+    @mixin media-querie-min($large-screen) {
+        @for $i from 1 through $count-col {
+            .col-l-#{$i} {
+                flex-basis: ($i / $count-col) * 100%;
+                max-width: ($i / $count-col) * 100%;
+            }
+    
+            .col-l-offset-#{$i} {
+                margin-left: ($i / $count-col) * 100%;
+            }
+        }
+    }
+
+    @mixin media-querie-min($xstra-large-screen) {
+        @for $i from 1 through $count-col {
+            .col-xl-#{$i} {
+                flex-basis: ($i / $count-col) * 100%;
+                max-width: ($i / $count-col) * 100%;
+            }
+    
+            .col-xl-offset-#{$i} {
+                margin-left: ($i / $count-col) * 100%;
+            }
+        }
+    }
 }

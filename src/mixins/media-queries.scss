@@ -12,7 +12,7 @@
     }
 }
 
-@mixin media-querie-min($min-screen-size, $max-screen-size) {
+@mixin media-querie-min-max($min-screen-size, $max-screen-size) {
     @media (min-width: $min-screen-size) and (max-width: $max-screen-size) {
         @content;
     }
