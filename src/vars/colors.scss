@@ -1,26 +1,31 @@
 //*** color vars ***//
 
+/*
+    colors to modify: red green
+*/
+
 $color-white: #ffffff !default;
 $color-black: #000000 !default;
 
 $dark: #282828 !default;
-$dark-dark: #0E1111 !default;
+$darker: #0E1111 !default;
 $light-dark: #626262 !default;
 
-$light: #F4F3F4 !default;
+$light: #e7e3e7 !default;
+$lighter: #FFFFFF !default;
 $dark-light: #D9D8DA !default;
-$light-light: #FFFFFF !default;
+
 
 $disabled: #c1c1c1 !default;
-$dark-disabled: #313131 !default;
+$dark-disabled: #474747 !default;
 $light-disabled: #d6cfcf !default;
 
 
 $lighter-green: #52BF90 !default;
-$light-green: #419873 !default;
-$green: #317256 !default;
-$dark-green: #284C42 !default;
-$darker-green: #182C25 !default;
+$light-green: #4caf84 !default;
+$green: #119955 !default;
+$dark-green: #254d41 !default;
+$darker-green: #1b3a2f !default;
 
 $lighter-blue: #738ee9 !default;
 $light-blue: #244ac7 !default;
@@ -30,9 +35,9 @@ $darker-blue: #0b173f !default;
 
 $lighter-purple: #A787C4 !default;
 $light-purple: #7D49A4 !default;
-$purple: #59008A !default;
+$purple: #780eb1 !default;
 $dark-purple: #420061 !default;
-$darker-purple: #28003A !default; 
+$darker-purple: #330449 !default; 
 
 $lighter-red: #FF8181 !default;
 $light-red: #FD2B2A !default;
@@ -44,13 +49,13 @@ $lighter-orange: #F7C293 !default;
 $light-orange: #F7AA40 !default;
 $orange: #F55302 !default;
 $dark-orange: #D23F06 !default;
-$darker-orange: #B93F00 !default;
+$darker-orange: #a33803 !default;
 
 $lighter-yellow: #F5F778 !default;
 $light-yellow: #F4F72A !default;
 $yellow: #F7BE00 !default;
-$dark-yellow: #F7CC00 !default;
-$darker-yellow: #BD903C !default; 
+$dark-yellow: #c0a311 !default;
+$darker-yellow: #6d5324 !default; 
 
 $lighter-brown: #D2A56D !default;
 $light-brown: #96613D !default;
