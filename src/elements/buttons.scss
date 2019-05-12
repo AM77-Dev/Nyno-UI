@@ -679,6 +679,42 @@ input[type='submit'],
             color: $light
         }
     }
+
+    &.dark-brown{
+        border-color: $dark-brown;
+        background: transparent;
+        color:  $dark-brown;
+    
+        &._dark:hover{
+            border-color: $darker-brown;
+            background: $darker-brown;
+            color: $lighter
+        }
+    
+        &._light:hover{
+            border-color: $light-brown;
+            background: $light-brown;
+            color: $light
+        }
+    }
+    
+    &.light-brown{
+        border-color: $light-brown;
+        background: transparent;
+        color:  $light-brown;
+    
+        &._dark:hover{
+            border-color: $dark-brown;
+            background: $dark-brown;
+            color: $light;
+        }
+    
+        &._light:hover{
+            border-color: $lighter-brown;
+            background: $lighter-brown;
+            color: $light;
+        }
+    }
     
     &.dark-pink{
         border-color: $dark-pink;
