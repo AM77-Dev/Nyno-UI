@@ -1,0 +1,19 @@
+//*** Media Queries ***//
+
+@mixin media-querie-min($screen-size) {
+    @media (min-width: $screen-size) {
+        @content;
+    }
+}
+
+@mixin media-querie-max($screen-size) {
+    @media (max-width: $screen-size) {
+        @content;
+    }
+}
+
+@mixin media-querie-min($min-screen-size, $max-screen-size) {
+    @media (min-width: $min-screen-size) and (max-width: $max-screen-size) {
+        @content;
+    }
+}
