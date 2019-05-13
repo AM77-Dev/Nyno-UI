@@ -153,14 +153,14 @@ input[type=button].medium,
 input[type=reset].medium,
 input[type=submit].medium,
 .btn.medium {
-  font-size: 1em;
+  font-size: 1.4em;
 }
 button.small,
 input[type=button].small,
 input[type=reset].small,
 input[type=submit].small,
 .btn.small {
-  font-size: 0.7em;
+  font-size: 1.4em;
 }
 button.square,
 input[type=button].square,
@@ -196,31 +196,6 @@ input[type=reset]:active,
 input[type=submit]:active,
 .btn:active {
   outline: none;
-}
-button.disabled,
-input[type=button].disabled,
-input[type=reset].disabled,
-input[type=submit].disabled,
-.btn.disabled {
-  background: #c1c1c1;
-  color: #e7e3e7;
-  cursor: not-allowed;
-}
-button.disabled._dark,
-input[type=button].disabled._dark,
-input[type=reset].disabled._dark,
-input[type=submit].disabled._dark,
-.btn.disabled._dark {
-  background: #474747;
-  color: #0E1111;
-}
-button.disabled._light,
-input[type=button].disabled._light,
-input[type=reset].disabled._light,
-input[type=submit].disabled._light,
-.btn.disabled._light {
-  background: #d6cfcf;
-  color: #626262;
 }
 button.green,
 input[type=button].green,
@@ -1150,4 +1125,45 @@ input[type=submit].light-pink._light:hover,
   color: #e7e3e7;
 }
 
-/*# sourceMappingURL=nynoo-ui.css.map */
+button.disabled,
+input[type=button].disabled,
+input[type=reset].disabled,
+input[type=submit].disabled,
+.btn.disabled,
+button:disabled,
+input[type=button]:disabled,
+input[type=reset]:disabled,
+input[type=submit]:disabled,
+.btn:disabled {
+  background: #c1c1c1;
+  color: #e7e3e7;
+  cursor: not-allowed;
+}
+button.disabled._dark,
+input[type=button].disabled._dark,
+input[type=reset].disabled._dark,
+input[type=submit].disabled._dark,
+.btn.disabled._dark,
+button:disabled._dark,
+input[type=button]:disabled._dark,
+input[type=reset]:disabled._dark,
+input[type=submit]:disabled._dark,
+.btn:disabled._dark {
+  background: #474747;
+  color: #0E1111;
+}
+button.disabled._light,
+input[type=button].disabled._light,
+input[type=reset].disabled._light,
+input[type=submit].disabled._light,
+.btn.disabled._light,
+button:disabled._light,
+input[type=button]:disabled._light,
+input[type=reset]:disabled._light,
+input[type=submit]:disabled._light,
+.btn:disabled._light {
+  background: #d6cfcf;
+  color: #626262;
+}
+
+/*# sourceMappingURL=nyno-ui.css.map */
