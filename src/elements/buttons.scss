@@ -4,7 +4,7 @@ input[type='reset'],
 input[type='submit'],
 .btn{
     border: none;
-    border-radius: 3px;
+    border-radius: $border-radius;
     margin: 0;
     background: $light;
     transition: all 250ms ease;
@@ -14,24 +14,26 @@ input[type='submit'],
     padding: 0.5em 1em;
     font-size: 1em;
 
+    //sizes
     &.large{
-        font-size: 1.4em;
+        font-size: $large-font;
     }
 
     &.medium{
-        font-size: 1em;
+        font-size: $large-font;
     }
 
     &.small{
-        font-size: 0.7em;
+        font-size: $large-font;
     }
 
+    // borders
+    &.square{
+        border-radius: 0
+    }
+    
     &.round{
         border-radius: 2em
-    }
-
-    &:active{
-        outline: none;
     }
 
     &.border{
@@ -42,20 +44,9 @@ input[type='submit'],
         border: 1px dashed $dark
     }
 
-    &.disabled{
-        background: $disabled;
-        color: $light;
-        cursor: not-allowed;
-
-        &._dark{
-            background: $dark-disabled;
-            color: $darker
-        }
-
-        &._light{
-            background: $light-disabled;
-            color: $light-dark;
-        }
+    // actions
+    &:active{
+        outline: none;
     }
 
     &.green{
@@ -425,21 +416,23 @@ input[type='submit'],
         }
     }
 
-/*
-    &.close{
-        position: relative;
-        padding: 0;
-        width: 10px;
-        height: 10px;
+//
+//    &.close{
+//        position: relative;
+//        padding: 0;
+//       width: 10px;
+//        height: 10px;
+//
+//        &::after{
+//            position: absolute;
+//            content: "";
+//           width: 100%;
+//          height: 2px;
+//        background: red;
+//  }
+//    }
+//
 
-        &::after{
-            position: absolute;
-            content: "";
-            width: 100%;
-            height: 2px;
-            background: red;
-        }
-    } */
 }
 
 .btn-o{
@@ -789,3 +782,27 @@ input[type='submit'],
     }
 }
 
+button.disabled,
+input[type='button'].disabled,
+input[type='reset'].disabled,
+input[type='submit'].disabled,
+.btn.disabled,
+button:disabled,
+input[type='button']:disabled,
+input[type='reset']:disabled,
+input[type='submit']:disabled,
+.btn:disabled{
+    background: $disabled;
+    color: $light;
+    cursor: not-allowed;
+
+    &._dark{
+        background: $dark-disabled;
+        color: $darker
+    }
+
+    &._light{
+        background: $light-disabled;
+        color: $light-dark;
+    }
+}
