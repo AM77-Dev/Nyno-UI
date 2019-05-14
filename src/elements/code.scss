@@ -1,0 +1,45 @@
+
+code {
+    color: $dark;
+    font-family: consolas, Monaco, 'Courier New', Courier, monospace;
+    white-space: pre;
+
+    pre {
+        display: block;
+        margin: 15px 0;
+        padding: 10px 15px;
+        border-left: 5px solid $dark;
+        background: $lighter;
+        font-family: "Fira Code", "SF mono", Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+        color: $dark;
+        white-space: normal;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        border-radius: $border-radius;
+    }
+
+    &.code-l{
+        font-size: $large-font;
+    }
+
+    &.code-m{
+        font-size: $medium-font;
+    }
+
+    &.code-s{
+        font-size: $small-font;
+    }
+
+    &.square{
+        pre{
+            border-radius: 0;
+        }
+    }
+
+    @each $name, $color in $all-colors {
+        &.#{$name} pre{
+            border-left: 5px solid $color; 
+        }
+    }
+}
