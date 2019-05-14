@@ -15,15 +15,15 @@ input[type='submit'],
     font-size: 1em;
 
     //sizes
-    &.large{
+    &.btn-l{
         font-size: $large-font;
     }
 
-    &.medium{
+    &.btn-m{
         font-size: $large-font;
     }
 
-    &.small{
+    &.btn-s{
         font-size: $large-font;
     }
 
@@ -439,6 +439,54 @@ input[type='submit'],
     border: 1px solid $light;
     background: transparent;
 
+/*
+
+
+
+
+
+
+
+fix this with other colors
+
+&.green{
+        border-color: $green;
+        background: transparent;
+
+        &._dark:hover{
+            border-color: $darker-green;
+            background: $darker-green;
+            color: $light
+        }
+    
+        &._light:hover{
+            border-color: $light-green;
+            background: $light-green;
+            color: $lighter
+        }
+    }
+
+
+
+*/
+
+    &.green{
+        border-color: $green;
+        background: transparent;
+
+        &._dark:hover{
+            border-color: $darker-green;
+            background: $darker-green;
+            color: $light
+        }
+    
+        &._light:hover{
+            border-color: $light-green;
+            background: $light-green;
+            color: $lighter
+        }
+    }
+
     &.dark-green{
         border-color: $dark-green;
         background: transparent;
@@ -786,12 +834,7 @@ button.disabled,
 input[type='button'].disabled,
 input[type='reset'].disabled,
 input[type='submit'].disabled,
-.btn.disabled,
-button:disabled,
-input[type='button']:disabled,
-input[type='reset']:disabled,
-input[type='submit']:disabled,
-.btn:disabled{
+.btn.disabled{
     background: $disabled;
     color: $light;
     cursor: not-allowed;
