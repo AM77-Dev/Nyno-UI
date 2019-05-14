@@ -1,0 +1,58 @@
+$line-height: 1.6 !default;
+$font-weight: 300 !default;
+$font-size: $medium-font !default;
+$font-color: $dark !default;
+
+body {
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+    color: $font-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $font-color;
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: $font-size * 3;
+    line-height: $font-size * 3.75;
+}
+
+h2 {
+    font-size: $font-size * 2.5;
+    line-height: $font-size * 3.25;
+}
+
+h3 {
+    font-size: $font-size * 2;
+    line-height: $font-size * 2.75;
+}
+
+h4 {
+    font-size: $font-size * 1.75;
+    line-height: $font-size * 2.5;
+}
+
+h5 {
+    font-size: $font-size * 1.5;
+    line-height: $font-size * 2.25;
+}
+
+h6 {
+    font-size: $font-size * 1.25;
+    line-height: $font-size * 2;
+}
+
+strong,
+b {
+    font-weight: 600;
+}
