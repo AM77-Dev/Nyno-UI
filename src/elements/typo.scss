@@ -56,3 +56,37 @@ strong,
 b {
     font-weight: 600;
 }
+
+blockquote {
+    display: block;
+    margin: 15px 15px 30px;
+    padding: 15px;
+    font-size: 1em;
+    color: $light-dark;
+    font-weight: 400;
+    border-left: 4px solid $dark;
+    background: $lighter;
+    border-radius: $border-radius;
+
+    &.blockquote-l{
+        font-size: $large-font;
+    }
+
+    &.blockquote-m{
+        font-size: $medium-font;
+    }
+
+    &.blockquote-s{
+        font-size: $small-font;
+    }
+
+    &.sqaure{
+        border-radius: 0;
+    }
+
+    @each $name, $color in $all-colors {
+        &.#{$name}{
+            border-left: 4px solid $color; 
+        }
+    }
+}
