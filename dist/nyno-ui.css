@@ -141,25 +141,25 @@ input[type=submit],
   padding: 0.5em 1em;
   font-size: 1em;
 }
-button.large,
-input[type=button].large,
-input[type=reset].large,
-input[type=submit].large,
-.btn.large {
+button.btn-l,
+input[type=button].btn-l,
+input[type=reset].btn-l,
+input[type=submit].btn-l,
+.btn.btn-l {
   font-size: 1.4em;
 }
-button.medium,
-input[type=button].medium,
-input[type=reset].medium,
-input[type=submit].medium,
-.btn.medium {
+button.btn-m,
+input[type=button].btn-m,
+input[type=reset].btn-m,
+input[type=submit].btn-m,
+.btn.btn-m {
   font-size: 1.4em;
 }
-button.small,
-input[type=button].small,
-input[type=reset].small,
-input[type=submit].small,
-.btn.small {
+button.btn-s,
+input[type=button].btn-s,
+input[type=reset].btn-s,
+input[type=submit].btn-s,
+.btn.btn-s {
   font-size: 1.4em;
 }
 button.square,
@@ -838,6 +838,50 @@ input[type=submit].light-pink._light:hover,
 .btn-o {
   border: 1px solid #e7e3e7;
   background: transparent;
+  /*
+
+
+
+
+
+
+
+  fix this with other colors
+
+  &.green{
+          border-color: $green;
+          background: transparent;
+
+          &._dark:hover{
+              border-color: $darker-green;
+              background: $darker-green;
+              color: $light
+          }
+
+          &._light:hover{
+              border-color: $light-green;
+              background: $light-green;
+              color: $lighter
+          }
+      }
+
+
+
+  */
+}
+.btn-o.green {
+  border-color: #119955;
+  background: transparent;
+}
+.btn-o.green._dark:hover {
+  border-color: #1b3a2f;
+  background: #1b3a2f;
+  color: #e7e3e7;
+}
+.btn-o.green._light:hover {
+  border-color: #4caf84;
+  background: #4caf84;
+  color: #FFFFFF;
 }
 .btn-o.dark-green {
   border-color: #254d41;
@@ -1129,12 +1173,7 @@ button.disabled,
 input[type=button].disabled,
 input[type=reset].disabled,
 input[type=submit].disabled,
-.btn.disabled,
-button:disabled,
-input[type=button]:disabled,
-input[type=reset]:disabled,
-input[type=submit]:disabled,
-.btn:disabled {
+.btn.disabled {
   background: #c1c1c1;
   color: #e7e3e7;
   cursor: not-allowed;
@@ -1143,12 +1182,7 @@ button.disabled._dark,
 input[type=button].disabled._dark,
 input[type=reset].disabled._dark,
 input[type=submit].disabled._dark,
-.btn.disabled._dark,
-button:disabled._dark,
-input[type=button]:disabled._dark,
-input[type=reset]:disabled._dark,
-input[type=submit]:disabled._dark,
-.btn:disabled._dark {
+.btn.disabled._dark {
   background: #474747;
   color: #0E1111;
 }
@@ -1156,12 +1190,7 @@ button.disabled._light,
 input[type=button].disabled._light,
 input[type=reset].disabled._light,
 input[type=submit].disabled._light,
-.btn.disabled._light,
-button:disabled._light,
-input[type=button]:disabled._light,
-input[type=reset]:disabled._light,
-input[type=submit]:disabled._light,
-.btn:disabled._light {
+.btn.disabled._light {
   background: #d6cfcf;
   color: #626262;
 }
