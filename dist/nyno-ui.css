@@ -1195,4 +1195,1273 @@ input[type=submit].disabled._light,
   color: #626262;
 }
 
+input[type=text].input,
+input[type=password].input {
+  border: 1px solid #282828;
+  border-radius: 3px;
+  padding: 0.5em;
+  font-size: 1em;
+  transition: all 250ms ease;
+}
+input[type=text].input.input-l,
+input[type=password].input.input-l {
+  font-size: 1.4em;
+}
+input[type=text].input.input-m,
+input[type=password].input.input-m {
+  font-size: 1em;
+}
+input[type=text].input.input-s,
+input[type=password].input.input-s {
+  font-size: 0.7em;
+}
+input[type=text].input.square,
+input[type=password].input.square {
+  border-radius: 0;
+}
+input[type=text].input.round,
+input[type=password].input.round {
+  border-radius: 2em;
+  padding-left: 1em;
+}
+input[type=text].input.white:hover,
+input[type=password].input.white:hover {
+  border-color: #ffffff;
+  box-shadow: 0px 0px 2px 0px #ffffff;
+}
+input[type=text].input.white:active, input[type=text].input.white:focus,
+input[type=password].input.white:active,
+input[type=password].input.white:focus {
+  border-color: #ffffff;
+  box-shadow: 0px 0px 2px 0px #ffffff inset;
+}
+input[type=text].input.white-o,
+input[type=password].input.white-o {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+input[type=text].input.white-o:hover,
+input[type=password].input.white-o:hover {
+  box-shadow: 0px 0px 2px 0px #ffffff;
+}
+input[type=text].input.white-o:active, input[type=text].input.white-o:focus,
+input[type=password].input.white-o:active,
+input[type=password].input.white-o:focus {
+  box-shadow: 0px 0px 2px 0px #ffffff inset;
+}
+input[type=text].input.black:hover,
+input[type=password].input.black:hover {
+  border-color: #000000;
+  box-shadow: 0px 0px 2px 0px #000000;
+}
+input[type=text].input.black:active, input[type=text].input.black:focus,
+input[type=password].input.black:active,
+input[type=password].input.black:focus {
+  border-color: #000000;
+  box-shadow: 0px 0px 2px 0px #000000 inset;
+}
+input[type=text].input.black-o,
+input[type=password].input.black-o {
+  color: #000000;
+  border-color: #000000;
+}
+input[type=text].input.black-o:hover,
+input[type=password].input.black-o:hover {
+  box-shadow: 0px 0px 2px 0px #000000;
+}
+input[type=text].input.black-o:active, input[type=text].input.black-o:focus,
+input[type=password].input.black-o:active,
+input[type=password].input.black-o:focus {
+  box-shadow: 0px 0px 2px 0px #000000 inset;
+}
+input[type=text].input.dark:hover,
+input[type=password].input.dark:hover {
+  border-color: #282828;
+  box-shadow: 0px 0px 2px 0px #282828;
+}
+input[type=text].input.dark:active, input[type=text].input.dark:focus,
+input[type=password].input.dark:active,
+input[type=password].input.dark:focus {
+  border-color: #282828;
+  box-shadow: 0px 0px 2px 0px #282828 inset;
+}
+input[type=text].input.dark-o,
+input[type=password].input.dark-o {
+  color: #282828;
+  border-color: #282828;
+}
+input[type=text].input.dark-o:hover,
+input[type=password].input.dark-o:hover {
+  box-shadow: 0px 0px 2px 0px #282828;
+}
+input[type=text].input.dark-o:active, input[type=text].input.dark-o:focus,
+input[type=password].input.dark-o:active,
+input[type=password].input.dark-o:focus {
+  box-shadow: 0px 0px 2px 0px #282828 inset;
+}
+input[type=text].input.light:hover,
+input[type=password].input.light:hover {
+  border-color: #e7e3e7;
+  box-shadow: 0px 0px 2px 0px #e7e3e7;
+}
+input[type=text].input.light:active, input[type=text].input.light:focus,
+input[type=password].input.light:active,
+input[type=password].input.light:focus {
+  border-color: #e7e3e7;
+  box-shadow: 0px 0px 2px 0px #e7e3e7 inset;
+}
+input[type=text].input.light-o,
+input[type=password].input.light-o {
+  color: #e7e3e7;
+  border-color: #e7e3e7;
+}
+input[type=text].input.light-o:hover,
+input[type=password].input.light-o:hover {
+  box-shadow: 0px 0px 2px 0px #e7e3e7;
+}
+input[type=text].input.light-o:active, input[type=text].input.light-o:focus,
+input[type=password].input.light-o:active,
+input[type=password].input.light-o:focus {
+  box-shadow: 0px 0px 2px 0px #e7e3e7 inset;
+}
+input[type=text].input.green:hover,
+input[type=password].input.green:hover {
+  border-color: #119955;
+  box-shadow: 0px 0px 2px 0px #119955;
+}
+input[type=text].input.green:active, input[type=text].input.green:focus,
+input[type=password].input.green:active,
+input[type=password].input.green:focus {
+  border-color: #119955;
+  box-shadow: 0px 0px 2px 0px #119955 inset;
+}
+input[type=text].input.green-o,
+input[type=password].input.green-o {
+  color: #119955;
+  border-color: #119955;
+}
+input[type=text].input.green-o:hover,
+input[type=password].input.green-o:hover {
+  box-shadow: 0px 0px 2px 0px #119955;
+}
+input[type=text].input.green-o:active, input[type=text].input.green-o:focus,
+input[type=password].input.green-o:active,
+input[type=password].input.green-o:focus {
+  box-shadow: 0px 0px 2px 0px #119955 inset;
+}
+input[type=text].input.blue:hover,
+input[type=password].input.blue:hover {
+  border-color: #1034A6;
+  box-shadow: 0px 0px 2px 0px #1034A6;
+}
+input[type=text].input.blue:active, input[type=text].input.blue:focus,
+input[type=password].input.blue:active,
+input[type=password].input.blue:focus {
+  border-color: #1034A6;
+  box-shadow: 0px 0px 2px 0px #1034A6 inset;
+}
+input[type=text].input.blue-o,
+input[type=password].input.blue-o {
+  color: #1034A6;
+  border-color: #1034A6;
+}
+input[type=text].input.blue-o:hover,
+input[type=password].input.blue-o:hover {
+  box-shadow: 0px 0px 2px 0px #1034A6;
+}
+input[type=text].input.blue-o:active, input[type=text].input.blue-o:focus,
+input[type=password].input.blue-o:active,
+input[type=password].input.blue-o:focus {
+  box-shadow: 0px 0px 2px 0px #1034A6 inset;
+}
+input[type=text].input.purple:hover,
+input[type=password].input.purple:hover {
+  border-color: #780eb1;
+  box-shadow: 0px 0px 2px 0px #780eb1;
+}
+input[type=text].input.purple:active, input[type=text].input.purple:focus,
+input[type=password].input.purple:active,
+input[type=password].input.purple:focus {
+  border-color: #780eb1;
+  box-shadow: 0px 0px 2px 0px #780eb1 inset;
+}
+input[type=text].input.purple-o,
+input[type=password].input.purple-o {
+  color: #780eb1;
+  border-color: #780eb1;
+}
+input[type=text].input.purple-o:hover,
+input[type=password].input.purple-o:hover {
+  box-shadow: 0px 0px 2px 0px #780eb1;
+}
+input[type=text].input.purple-o:active, input[type=text].input.purple-o:focus,
+input[type=password].input.purple-o:active,
+input[type=password].input.purple-o:focus {
+  box-shadow: 0px 0px 2px 0px #780eb1 inset;
+}
+input[type=text].input.red:hover,
+input[type=password].input.red:hover {
+  border-color: #cd0033;
+  box-shadow: 0px 0px 2px 0px #cd0033;
+}
+input[type=text].input.red:active, input[type=text].input.red:focus,
+input[type=password].input.red:active,
+input[type=password].input.red:focus {
+  border-color: #cd0033;
+  box-shadow: 0px 0px 2px 0px #cd0033 inset;
+}
+input[type=text].input.red-o,
+input[type=password].input.red-o {
+  color: #cd0033;
+  border-color: #cd0033;
+}
+input[type=text].input.red-o:hover,
+input[type=password].input.red-o:hover {
+  box-shadow: 0px 0px 2px 0px #cd0033;
+}
+input[type=text].input.red-o:active, input[type=text].input.red-o:focus,
+input[type=password].input.red-o:active,
+input[type=password].input.red-o:focus {
+  box-shadow: 0px 0px 2px 0px #cd0033 inset;
+}
+input[type=text].input.orange:hover,
+input[type=password].input.orange:hover {
+  border-color: #F55302;
+  box-shadow: 0px 0px 2px 0px #F55302;
+}
+input[type=text].input.orange:active, input[type=text].input.orange:focus,
+input[type=password].input.orange:active,
+input[type=password].input.orange:focus {
+  border-color: #F55302;
+  box-shadow: 0px 0px 2px 0px #F55302 inset;
+}
+input[type=text].input.orange-o,
+input[type=password].input.orange-o {
+  color: #F55302;
+  border-color: #F55302;
+}
+input[type=text].input.orange-o:hover,
+input[type=password].input.orange-o:hover {
+  box-shadow: 0px 0px 2px 0px #F55302;
+}
+input[type=text].input.orange-o:active, input[type=text].input.orange-o:focus,
+input[type=password].input.orange-o:active,
+input[type=password].input.orange-o:focus {
+  box-shadow: 0px 0px 2px 0px #F55302 inset;
+}
+input[type=text].input.yellow:hover,
+input[type=password].input.yellow:hover {
+  border-color: #F7BE00;
+  box-shadow: 0px 0px 2px 0px #F7BE00;
+}
+input[type=text].input.yellow:active, input[type=text].input.yellow:focus,
+input[type=password].input.yellow:active,
+input[type=password].input.yellow:focus {
+  border-color: #F7BE00;
+  box-shadow: 0px 0px 2px 0px #F7BE00 inset;
+}
+input[type=text].input.yellow-o,
+input[type=password].input.yellow-o {
+  color: #F7BE00;
+  border-color: #F7BE00;
+}
+input[type=text].input.yellow-o:hover,
+input[type=password].input.yellow-o:hover {
+  box-shadow: 0px 0px 2px 0px #F7BE00;
+}
+input[type=text].input.yellow-o:active, input[type=text].input.yellow-o:focus,
+input[type=password].input.yellow-o:active,
+input[type=password].input.yellow-o:focus {
+  box-shadow: 0px 0px 2px 0px #F7BE00 inset;
+}
+input[type=text].input.brown:hover,
+input[type=password].input.brown:hover {
+  border-color: #8b4136;
+  box-shadow: 0px 0px 2px 0px #8b4136;
+}
+input[type=text].input.brown:active, input[type=text].input.brown:focus,
+input[type=password].input.brown:active,
+input[type=password].input.brown:focus {
+  border-color: #8b4136;
+  box-shadow: 0px 0px 2px 0px #8b4136 inset;
+}
+input[type=text].input.brown-o,
+input[type=password].input.brown-o {
+  color: #8b4136;
+  border-color: #8b4136;
+}
+input[type=text].input.brown-o:hover,
+input[type=password].input.brown-o:hover {
+  box-shadow: 0px 0px 2px 0px #8b4136;
+}
+input[type=text].input.brown-o:active, input[type=text].input.brown-o:focus,
+input[type=password].input.brown-o:active,
+input[type=password].input.brown-o:focus {
+  box-shadow: 0px 0px 2px 0px #8b4136 inset;
+}
+input[type=text].input.teal:hover,
+input[type=password].input.teal:hover {
+  border-color: #00796B;
+  box-shadow: 0px 0px 2px 0px #00796B;
+}
+input[type=text].input.teal:active, input[type=text].input.teal:focus,
+input[type=password].input.teal:active,
+input[type=password].input.teal:focus {
+  border-color: #00796B;
+  box-shadow: 0px 0px 2px 0px #00796B inset;
+}
+input[type=text].input.teal-o,
+input[type=password].input.teal-o {
+  color: #00796B;
+  border-color: #00796B;
+}
+input[type=text].input.teal-o:hover,
+input[type=password].input.teal-o:hover {
+  box-shadow: 0px 0px 2px 0px #00796B;
+}
+input[type=text].input.teal-o:active, input[type=text].input.teal-o:focus,
+input[type=password].input.teal-o:active,
+input[type=password].input.teal-o:focus {
+  box-shadow: 0px 0px 2px 0px #00796B inset;
+}
+input[type=text].input.pink:hover,
+input[type=password].input.pink:hover {
+  border-color: #B20056;
+  box-shadow: 0px 0px 2px 0px #B20056;
+}
+input[type=text].input.pink:active, input[type=text].input.pink:focus,
+input[type=password].input.pink:active,
+input[type=password].input.pink:focus {
+  border-color: #B20056;
+  box-shadow: 0px 0px 2px 0px #B20056 inset;
+}
+input[type=text].input.pink-o,
+input[type=password].input.pink-o {
+  color: #B20056;
+  border-color: #B20056;
+}
+input[type=text].input.pink-o:hover,
+input[type=password].input.pink-o:hover {
+  box-shadow: 0px 0px 2px 0px #B20056;
+}
+input[type=text].input.pink-o:active, input[type=text].input.pink-o:focus,
+input[type=password].input.pink-o:active,
+input[type=password].input.pink-o:focus {
+  box-shadow: 0px 0px 2px 0px #B20056 inset;
+}
+input[type=text].input.line,
+input[type=password].input.line {
+  border-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+input[type=text].input.line.white:hover,
+input[type=password].input.line.white:hover {
+  box-shadow: 0px 1px 10px -15px #ffffff;
+  border-bottom-color: #ffffff;
+}
+input[type=text].input.line.white:active, input[type=text].input.line.white:focus,
+input[type=password].input.line.white:active,
+input[type=password].input.line.white:focus {
+  box-shadow: 0px 14px 10px -15px #ffffff;
+}
+input[type=text].input.line.white-o,
+input[type=password].input.line.white-o {
+  color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+input[type=text].input.line.white-o:hover,
+input[type=password].input.line.white-o:hover {
+  box-shadow: 0px 1px 10px -15px #ffffff;
+  border-bottom-color: #ffffff;
+}
+input[type=text].input.line.white-o:active, input[type=text].input.line.white-o:focus,
+input[type=password].input.line.white-o:active,
+input[type=password].input.line.white-o:focus {
+  box-shadow: 0px 14px 10px -15px #ffffff;
+}
+input[type=text].input.line.black:hover,
+input[type=password].input.line.black:hover {
+  box-shadow: 0px 1px 10px -15px #000000;
+  border-bottom-color: #000000;
+}
+input[type=text].input.line.black:active, input[type=text].input.line.black:focus,
+input[type=password].input.line.black:active,
+input[type=password].input.line.black:focus {
+  box-shadow: 0px 14px 10px -15px #000000;
+}
+input[type=text].input.line.black-o,
+input[type=password].input.line.black-o {
+  color: #000000;
+  border-bottom-color: #000000;
+}
+input[type=text].input.line.black-o:hover,
+input[type=password].input.line.black-o:hover {
+  box-shadow: 0px 1px 10px -15px #000000;
+  border-bottom-color: #000000;
+}
+input[type=text].input.line.black-o:active, input[type=text].input.line.black-o:focus,
+input[type=password].input.line.black-o:active,
+input[type=password].input.line.black-o:focus {
+  box-shadow: 0px 14px 10px -15px #000000;
+}
+input[type=text].input.line.dark:hover,
+input[type=password].input.line.dark:hover {
+  box-shadow: 0px 1px 10px -15px #282828;
+  border-bottom-color: #282828;
+}
+input[type=text].input.line.dark:active, input[type=text].input.line.dark:focus,
+input[type=password].input.line.dark:active,
+input[type=password].input.line.dark:focus {
+  box-shadow: 0px 14px 10px -15px #282828;
+}
+input[type=text].input.line.dark-o,
+input[type=password].input.line.dark-o {
+  color: #282828;
+  border-bottom-color: #282828;
+}
+input[type=text].input.line.dark-o:hover,
+input[type=password].input.line.dark-o:hover {
+  box-shadow: 0px 1px 10px -15px #282828;
+  border-bottom-color: #282828;
+}
+input[type=text].input.line.dark-o:active, input[type=text].input.line.dark-o:focus,
+input[type=password].input.line.dark-o:active,
+input[type=password].input.line.dark-o:focus {
+  box-shadow: 0px 14px 10px -15px #282828;
+}
+input[type=text].input.line.light:hover,
+input[type=password].input.line.light:hover {
+  box-shadow: 0px 1px 10px -15px #e7e3e7;
+  border-bottom-color: #e7e3e7;
+}
+input[type=text].input.line.light:active, input[type=text].input.line.light:focus,
+input[type=password].input.line.light:active,
+input[type=password].input.line.light:focus {
+  box-shadow: 0px 14px 10px -15px #e7e3e7;
+}
+input[type=text].input.line.light-o,
+input[type=password].input.line.light-o {
+  color: #e7e3e7;
+  border-bottom-color: #e7e3e7;
+}
+input[type=text].input.line.light-o:hover,
+input[type=password].input.line.light-o:hover {
+  box-shadow: 0px 1px 10px -15px #e7e3e7;
+  border-bottom-color: #e7e3e7;
+}
+input[type=text].input.line.light-o:active, input[type=text].input.line.light-o:focus,
+input[type=password].input.line.light-o:active,
+input[type=password].input.line.light-o:focus {
+  box-shadow: 0px 14px 10px -15px #e7e3e7;
+}
+input[type=text].input.line.green:hover,
+input[type=password].input.line.green:hover {
+  box-shadow: 0px 1px 10px -15px #119955;
+  border-bottom-color: #119955;
+}
+input[type=text].input.line.green:active, input[type=text].input.line.green:focus,
+input[type=password].input.line.green:active,
+input[type=password].input.line.green:focus {
+  box-shadow: 0px 14px 10px -15px #119955;
+}
+input[type=text].input.line.green-o,
+input[type=password].input.line.green-o {
+  color: #119955;
+  border-bottom-color: #119955;
+}
+input[type=text].input.line.green-o:hover,
+input[type=password].input.line.green-o:hover {
+  box-shadow: 0px 1px 10px -15px #119955;
+  border-bottom-color: #119955;
+}
+input[type=text].input.line.green-o:active, input[type=text].input.line.green-o:focus,
+input[type=password].input.line.green-o:active,
+input[type=password].input.line.green-o:focus {
+  box-shadow: 0px 14px 10px -15px #119955;
+}
+input[type=text].input.line.blue:hover,
+input[type=password].input.line.blue:hover {
+  box-shadow: 0px 1px 10px -15px #1034A6;
+  border-bottom-color: #1034A6;
+}
+input[type=text].input.line.blue:active, input[type=text].input.line.blue:focus,
+input[type=password].input.line.blue:active,
+input[type=password].input.line.blue:focus {
+  box-shadow: 0px 14px 10px -15px #1034A6;
+}
+input[type=text].input.line.blue-o,
+input[type=password].input.line.blue-o {
+  color: #1034A6;
+  border-bottom-color: #1034A6;
+}
+input[type=text].input.line.blue-o:hover,
+input[type=password].input.line.blue-o:hover {
+  box-shadow: 0px 1px 10px -15px #1034A6;
+  border-bottom-color: #1034A6;
+}
+input[type=text].input.line.blue-o:active, input[type=text].input.line.blue-o:focus,
+input[type=password].input.line.blue-o:active,
+input[type=password].input.line.blue-o:focus {
+  box-shadow: 0px 14px 10px -15px #1034A6;
+}
+input[type=text].input.line.purple:hover,
+input[type=password].input.line.purple:hover {
+  box-shadow: 0px 1px 10px -15px #780eb1;
+  border-bottom-color: #780eb1;
+}
+input[type=text].input.line.purple:active, input[type=text].input.line.purple:focus,
+input[type=password].input.line.purple:active,
+input[type=password].input.line.purple:focus {
+  box-shadow: 0px 14px 10px -15px #780eb1;
+}
+input[type=text].input.line.purple-o,
+input[type=password].input.line.purple-o {
+  color: #780eb1;
+  border-bottom-color: #780eb1;
+}
+input[type=text].input.line.purple-o:hover,
+input[type=password].input.line.purple-o:hover {
+  box-shadow: 0px 1px 10px -15px #780eb1;
+  border-bottom-color: #780eb1;
+}
+input[type=text].input.line.purple-o:active, input[type=text].input.line.purple-o:focus,
+input[type=password].input.line.purple-o:active,
+input[type=password].input.line.purple-o:focus {
+  box-shadow: 0px 14px 10px -15px #780eb1;
+}
+input[type=text].input.line.red:hover,
+input[type=password].input.line.red:hover {
+  box-shadow: 0px 1px 10px -15px #cd0033;
+  border-bottom-color: #cd0033;
+}
+input[type=text].input.line.red:active, input[type=text].input.line.red:focus,
+input[type=password].input.line.red:active,
+input[type=password].input.line.red:focus {
+  box-shadow: 0px 14px 10px -15px #cd0033;
+}
+input[type=text].input.line.red-o,
+input[type=password].input.line.red-o {
+  color: #cd0033;
+  border-bottom-color: #cd0033;
+}
+input[type=text].input.line.red-o:hover,
+input[type=password].input.line.red-o:hover {
+  box-shadow: 0px 1px 10px -15px #cd0033;
+  border-bottom-color: #cd0033;
+}
+input[type=text].input.line.red-o:active, input[type=text].input.line.red-o:focus,
+input[type=password].input.line.red-o:active,
+input[type=password].input.line.red-o:focus {
+  box-shadow: 0px 14px 10px -15px #cd0033;
+}
+input[type=text].input.line.orange:hover,
+input[type=password].input.line.orange:hover {
+  box-shadow: 0px 1px 10px -15px #F55302;
+  border-bottom-color: #F55302;
+}
+input[type=text].input.line.orange:active, input[type=text].input.line.orange:focus,
+input[type=password].input.line.orange:active,
+input[type=password].input.line.orange:focus {
+  box-shadow: 0px 14px 10px -15px #F55302;
+}
+input[type=text].input.line.orange-o,
+input[type=password].input.line.orange-o {
+  color: #F55302;
+  border-bottom-color: #F55302;
+}
+input[type=text].input.line.orange-o:hover,
+input[type=password].input.line.orange-o:hover {
+  box-shadow: 0px 1px 10px -15px #F55302;
+  border-bottom-color: #F55302;
+}
+input[type=text].input.line.orange-o:active, input[type=text].input.line.orange-o:focus,
+input[type=password].input.line.orange-o:active,
+input[type=password].input.line.orange-o:focus {
+  box-shadow: 0px 14px 10px -15px #F55302;
+}
+input[type=text].input.line.yellow:hover,
+input[type=password].input.line.yellow:hover {
+  box-shadow: 0px 1px 10px -15px #F7BE00;
+  border-bottom-color: #F7BE00;
+}
+input[type=text].input.line.yellow:active, input[type=text].input.line.yellow:focus,
+input[type=password].input.line.yellow:active,
+input[type=password].input.line.yellow:focus {
+  box-shadow: 0px 14px 10px -15px #F7BE00;
+}
+input[type=text].input.line.yellow-o,
+input[type=password].input.line.yellow-o {
+  color: #F7BE00;
+  border-bottom-color: #F7BE00;
+}
+input[type=text].input.line.yellow-o:hover,
+input[type=password].input.line.yellow-o:hover {
+  box-shadow: 0px 1px 10px -15px #F7BE00;
+  border-bottom-color: #F7BE00;
+}
+input[type=text].input.line.yellow-o:active, input[type=text].input.line.yellow-o:focus,
+input[type=password].input.line.yellow-o:active,
+input[type=password].input.line.yellow-o:focus {
+  box-shadow: 0px 14px 10px -15px #F7BE00;
+}
+input[type=text].input.line.brown:hover,
+input[type=password].input.line.brown:hover {
+  box-shadow: 0px 1px 10px -15px #8b4136;
+  border-bottom-color: #8b4136;
+}
+input[type=text].input.line.brown:active, input[type=text].input.line.brown:focus,
+input[type=password].input.line.brown:active,
+input[type=password].input.line.brown:focus {
+  box-shadow: 0px 14px 10px -15px #8b4136;
+}
+input[type=text].input.line.brown-o,
+input[type=password].input.line.brown-o {
+  color: #8b4136;
+  border-bottom-color: #8b4136;
+}
+input[type=text].input.line.brown-o:hover,
+input[type=password].input.line.brown-o:hover {
+  box-shadow: 0px 1px 10px -15px #8b4136;
+  border-bottom-color: #8b4136;
+}
+input[type=text].input.line.brown-o:active, input[type=text].input.line.brown-o:focus,
+input[type=password].input.line.brown-o:active,
+input[type=password].input.line.brown-o:focus {
+  box-shadow: 0px 14px 10px -15px #8b4136;
+}
+input[type=text].input.line.teal:hover,
+input[type=password].input.line.teal:hover {
+  box-shadow: 0px 1px 10px -15px #00796B;
+  border-bottom-color: #00796B;
+}
+input[type=text].input.line.teal:active, input[type=text].input.line.teal:focus,
+input[type=password].input.line.teal:active,
+input[type=password].input.line.teal:focus {
+  box-shadow: 0px 14px 10px -15px #00796B;
+}
+input[type=text].input.line.teal-o,
+input[type=password].input.line.teal-o {
+  color: #00796B;
+  border-bottom-color: #00796B;
+}
+input[type=text].input.line.teal-o:hover,
+input[type=password].input.line.teal-o:hover {
+  box-shadow: 0px 1px 10px -15px #00796B;
+  border-bottom-color: #00796B;
+}
+input[type=text].input.line.teal-o:active, input[type=text].input.line.teal-o:focus,
+input[type=password].input.line.teal-o:active,
+input[type=password].input.line.teal-o:focus {
+  box-shadow: 0px 14px 10px -15px #00796B;
+}
+input[type=text].input.line.pink:hover,
+input[type=password].input.line.pink:hover {
+  box-shadow: 0px 1px 10px -15px #B20056;
+  border-bottom-color: #B20056;
+}
+input[type=text].input.line.pink:active, input[type=text].input.line.pink:focus,
+input[type=password].input.line.pink:active,
+input[type=password].input.line.pink:focus {
+  box-shadow: 0px 14px 10px -15px #B20056;
+}
+input[type=text].input.line.pink-o,
+input[type=password].input.line.pink-o {
+  color: #B20056;
+  border-bottom-color: #B20056;
+}
+input[type=text].input.line.pink-o:hover,
+input[type=password].input.line.pink-o:hover {
+  box-shadow: 0px 1px 10px -15px #B20056;
+  border-bottom-color: #B20056;
+}
+input[type=text].input.line.pink-o:active, input[type=text].input.line.pink-o:focus,
+input[type=password].input.line.pink-o:active,
+input[type=password].input.line.pink-o:focus {
+  box-shadow: 0px 14px 10px -15px #B20056;
+}
+
+input[type=text].disabled,
+input[type=password].disabled,
+input[disabled] {
+  border: 1px solid #c1c1c1;
+  background-color: #c1c1c1;
+  color: #474747;
+  cursor: not-allowed;
+}
+input[type=text].disabled:hover,
+input[type=password].disabled:hover,
+input[disabled]:hover {
+  box-shadow: none !important;
+}
+
+input[type=checkbox] {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #282828;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+}
+input[type=checkbox].size-s {
+  width: 15px;
+  height: 15px;
+}
+input[type=checkbox].size-m {
+  width: 20px;
+  height: 20px;
+}
+input[type=checkbox].size-l {
+  width: 30px;
+  height: 30px;
+}
+input[type=checkbox]:checked::before, input[type=checkbox]:active::before, input[type=checkbox]:checked:active::before {
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  content: " ";
+  border-radius: 3px;
+  height: 80%;
+  width: 80%;
+  background: #282828;
+  z-index: 10;
+}
+input[type=checkbox].check-x:checked::before, input[type=checkbox].check-x:checked::after, input[type=checkbox].check-x:active::before, input[type=checkbox].check-x:active::after, input[type=checkbox].check-x:checked:active::before, input[type=checkbox].check-x:checked:active::after {
+  display: block;
+  position: absolute;
+  content: " ";
+  border-radius: 3px;
+  height: 19px;
+  width: 4px;
+  background: #282828;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+input[type=checkbox].check-x:checked::before, input[type=checkbox].check-x:active::before, input[type=checkbox].check-x:checked:active::before {
+  transform: rotate(-45deg) translateX(-2px) translateY(2px);
+  transform-origin: top left;
+}
+input[type=checkbox].check-x:checked::after, input[type=checkbox].check-x:active::after, input[type=checkbox].check-x:checked:active::after {
+  transform: rotate(45deg) translateX(-4px) translateY(-4px);
+  transform-origin: bottom left;
+}
+input[type=checkbox].check-x:checked.size-s::before, input[type=checkbox].check-x:checked.size-s::after, input[type=checkbox].check-x:active.size-s::before, input[type=checkbox].check-x:active.size-s::after, input[type=checkbox].check-x:checked:active.size-s::before, input[type=checkbox].check-x:checked:active.size-s::after {
+  height: 12px;
+  width: 3px;
+}
+input[type=checkbox].check-x:checked.size-s::before, input[type=checkbox].check-x:active.size-s::before, input[type=checkbox].check-x:checked:active.size-s::before {
+  transform: rotate(-45deg) translateX(-1.5px) translateY(2px);
+}
+input[type=checkbox].check-x:checked.size-s::after, input[type=checkbox].check-x:active.size-s::after, input[type=checkbox].check-x:checked:active.size-s::after {
+  transform: rotate(45deg) translateX(-2px) translateY(-2.5px);
+}
+input[type=checkbox].check-x:checked.size-l::before, input[type=checkbox].check-x:checked.size-l::after, input[type=checkbox].check-x:active.size-l::before, input[type=checkbox].check-x:active.size-l::after, input[type=checkbox].check-x:checked:active.size-l::before, input[type=checkbox].check-x:checked:active.size-l::after {
+  height: 30px;
+  width: 5px;
+}
+input[type=checkbox].check-x:checked.size-l::before, input[type=checkbox].check-x:active.size-l::before, input[type=checkbox].check-x:checked:active.size-l::before {
+  transform: rotate(-45deg) translateX(-2.5px) translateY(3.5px);
+}
+input[type=checkbox].check-x:checked.size-l::after, input[type=checkbox].check-x:active.size-l::after, input[type=checkbox].check-x:checked:active.size-l::after {
+  transform: rotate(45deg) translateX(-5.5px) translateY(-6px);
+}
+input[type=checkbox].check-k:checked::before, input[type=checkbox].check-k:active::before, input[type=checkbox].check-k:checked:active::before {
+  display: block;
+  position: absolute;
+  content: " ";
+  border: 3px solid #282828;
+  border-radius: 0;
+  height: 40%;
+  width: 80%;
+  background: transparent;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  transform: rotate(-50deg) translateX(-6px) translateY(6px);
+  transform-origin: top left;
+}
+input[type=checkbox].check-k:checked.size-s::before, input[type=checkbox].check-k:active.size-s::before, input[type=checkbox].check-k:checked:active.size-s::before {
+  transform: rotate(-50deg) translateX(-4px) translateY(4px);
+}
+input[type=checkbox].check-k:checked.size-l::before, input[type=checkbox].check-k:active.size-l::before, input[type=checkbox].check-k:checked:active.size-l::before {
+  border: 4px solid #282828;
+  transform: rotate(-50deg) translateX(-10px) translateY(11px);
+}
+input[type=checkbox].square {
+  border-radius: 0;
+}
+input[type=checkbox].square:checked::before, input[type=checkbox].square:active::before, input[type=checkbox].square:checked:active::before {
+  border-radius: 0;
+}
+input[type=checkbox].square.type-x:checked::before, input[type=checkbox].square.type-x:checked::after, input[type=checkbox].square.type-x:active::before, input[type=checkbox].square.type-x:active::after, input[type=checkbox].square.type-x:checked:active::before, input[type=checkbox].square.type-x:checked:active::after {
+  border-radius: 3px;
+}
+input[type=checkbox].white {
+  border-color: #ffffff;
+}
+input[type=checkbox].white:checked::before, input[type=checkbox].white:active::before, input[type=checkbox].white:checked:active::before {
+  background: #ffffff;
+}
+input[type=checkbox].white.type-x:checked::before, input[type=checkbox].white.type-x:checked::after, input[type=checkbox].white.type-x:active::before, input[type=checkbox].white.type-x:active::after, input[type=checkbox].white.type-x:checked:active::before, input[type=checkbox].white.type-x:checked:active::after {
+  background: #ffffff;
+}
+input[type=checkbox].white.type-k:checked::before, input[type=checkbox].white.type-k:active::before, input[type=checkbox].white.type-k:checked:active::before {
+  background: transparent;
+  border-color: #ffffff;
+  border-top: none;
+  border-right: none;
+}
+input[type=checkbox].black {
+  border-color: #000000;
+}
+input[type=checkbox].black:checked::before, input[type=checkbox].black:active::before, input[type=checkbox].black:checked:active::before {
+  background: #000000;
+}
+input[type=checkbox].black.type-x:checked::before, input[type=checkbox].black.type-x:checked::after, input[type=checkbox].black.type-x:active::before, input[type=checkbox].black.type-x:active::after, input[type=checkbox].black.type-x:checked:active::before, input[type=checkbox].black.type-x:checked:active::after {
+  background: #000000;
+}
+input[type=checkbox].black.type-k:checked::before, input[type=checkbox].black.type-k:active::before, input[type=checkbox].black.type-k:checked:active::before {
+  background: transparent;
+  border-color: #000000;
+  border-top: none;
+  border-right: none;
+}
+input[type=checkbox].dark {
+  border-color: #282828;
+}
+input[type=checkbox].dark:checked::before, input[type=checkbox].dark:active::before, input[type=checkbox].dark:checked:active::before {
+  background: #282828;
+}
+input[type=checkbox].dark.type-x:checked::before, input[type=checkbox].dark.type-x:checked::after, input[type=checkbox].dark.type-x:active::before, input[type=checkbox].dark.type-x:active::after, input[type=checkbox].dark.type-x:checked:active::before, input[type=checkbox].dark.type-x:checked:active::after {
+  background: #282828;
+}
+input[type=checkbox].dark.type-k:checked::before, input[type=checkbox].dark.type-k:active::before, input[type=checkbox].dark.type-k:checked:active::before {
+  background: transparent;
+  border-color: #282828;
+  border-top: none;
+  border-right: none;
+}
+input[type=checkbox].light {
+  border-color: #e7e3e7;
+}
+input[type=checkbox].light:checked::before, input[type=checkbox].light:active::before, input[type=checkbox].light:checked:active::before {
+  background: #e7e3e7;
+}
+input[type=checkbox].light.type-x:checked::before, input[type=checkbox].light.type-x:checked::after, input[type=checkbox].light.type-x:active::before, input[type=checkbox].light.type-x:active::after, input[type=checkbox].light.type-x:checked:active::before, input[type=checkbox].light.type-x:checked:active::after {
+  background: #e7e3e7;
+}
+input[type=checkbox].light.type-k:checked::before, input[type=checkbox].light.type-k:active::before, input[type=checkbox].light.type-k:checked:active::before {
+  background: transparent;
+  border-color: #e7e3e7;
+  border-top: none;
+  border-right: none;
+}
+input[type=checkbox].green {
+  border-color: #119955;
+}
+input[type=checkbox].green:checked::before, input[type=checkbox].green:active::before, input[type=checkbox].green:checked:active::before {
+  background: #119955;
+}
+input[type=checkbox].green.type-x:checked::before, input[type=checkbox].green.type-x:checked::after, input[type=checkbox].green.type-x:active::before, input[type=checkbox].green.type-x:active::after, input[type=checkbox].green.type-x:checked:active::before, input[type=checkbox].green.type-x:checked:active::after {
+  background: #119955;
+}
+input[type=checkbox].green.type-k:checked::before, input[type=checkbox].green.type-k:active::before, input[type=checkbox].green.type-k:checked:active::before {
+  background: transparent;
+  border-color: #119955;
+  border-top: none;
+  border-right: none;
+}
+input[type=checkbox].blue {
+  border-color: #1034A6;
+}
+input[type=checkbox].blue:checked::before, input[type=checkbox].blue:active::before, input[type=checkbox].blue:checked:active::before {
+  background: #1034A6;
+}
+input[type=checkbox].blue.type-x:checked::before, input[type=checkbox].blue.type-x:checked::after, input[type=checkbox].blue.type-x:active::before, input[type=checkbox].blue.type-x:active::after, input[type=checkbox].blue.type-x:checked:active::before, input[type=checkbox].blue.type-x:checked:active::after {
+  background: #1034A6;
+}
+input[type=checkbox].blue.type-k:checked::before, input[type=checkbox].blue.type-k:active::before, input[type=checkbox].blue.type-k:checked:active::before {
+  background: transparent;
+  border-color: #1034A6;
+  border-top: none;
+  border-right: none;
+}
+input[type=checkbox].purple {
+  border-color: #780eb1;
+}
+input[type=checkbox].purple:checked::before, input[type=checkbox].purple:active::before, input[type=checkbox].purple:checked:active::before {
+  background: #780eb1;
+}
+input[type=checkbox].purple.type-x:checked::before, input[type=checkbox].purple.type-x:checked::after, input[type=checkbox].purple.type-x:active::before, input[type=checkbox].purple.type-x:active::after, input[type=checkbox].purple.type-x:checked:active::before, input[type=checkbox].purple.type-x:checked:active::after {
+  background: #780eb1;
+}
+input[type=checkbox].purple.type-k:checked::before, input[type=checkbox].purple.type-k:active::before, input[type=checkbox].purple.type-k:checked:active::before {
+  background: transparent;
+  border-color: #780eb1;
+  border-top: none;
+  border-right: none;
+}
+input[type=checkbox].red {
+  border-color: #cd0033;
+}
+input[type=checkbox].red:checked::before, input[type=checkbox].red:active::before, input[type=checkbox].red:checked:active::before {
+  background: #cd0033;
+}
+input[type=checkbox].red.type-x:checked::before, input[type=checkbox].red.type-x:checked::after, input[type=checkbox].red.type-x:active::before, input[type=checkbox].red.type-x:active::after, input[type=checkbox].red.type-x:checked:active::before, input[type=checkbox].red.type-x:checked:active::after {
+  background: #cd0033;
+}
+input[type=checkbox].red.type-k:checked::before, input[type=checkbox].red.type-k:active::before, input[type=checkbox].red.type-k:checked:active::before {
+  background: transparent;
+  border-color: #cd0033;
+  border-top: none;
+  border-right: none;
+}
+input[type=checkbox].orange {
+  border-color: #F55302;
+}
+input[type=checkbox].orange:checked::before, input[type=checkbox].orange:active::before, input[type=checkbox].orange:checked:active::before {
+  background: #F55302;
+}
+input[type=checkbox].orange.type-x:checked::before, input[type=checkbox].orange.type-x:checked::after, input[type=checkbox].orange.type-x:active::before, input[type=checkbox].orange.type-x:active::after, input[type=checkbox].orange.type-x:checked:active::before, input[type=checkbox].orange.type-x:checked:active::after {
+  background: #F55302;
+}
+input[type=checkbox].orange.type-k:checked::before, input[type=checkbox].orange.type-k:active::before, input[type=checkbox].orange.type-k:checked:active::before {
+  background: transparent;
+  border-color: #F55302;
+  border-top: none;
+  border-right: none;
+}
+input[type=checkbox].yellow {
+  border-color: #F7BE00;
+}
+input[type=checkbox].yellow:checked::before, input[type=checkbox].yellow:active::before, input[type=checkbox].yellow:checked:active::before {
+  background: #F7BE00;
+}
+input[type=checkbox].yellow.type-x:checked::before, input[type=checkbox].yellow.type-x:checked::after, input[type=checkbox].yellow.type-x:active::before, input[type=checkbox].yellow.type-x:active::after, input[type=checkbox].yellow.type-x:checked:active::before, input[type=checkbox].yellow.type-x:checked:active::after {
+  background: #F7BE00;
+}
+input[type=checkbox].yellow.type-k:checked::before, input[type=checkbox].yellow.type-k:active::before, input[type=checkbox].yellow.type-k:checked:active::before {
+  background: transparent;
+  border-color: #F7BE00;
+  border-top: none;
+  border-right: none;
+}
+input[type=checkbox].brown {
+  border-color: #8b4136;
+}
+input[type=checkbox].brown:checked::before, input[type=checkbox].brown:active::before, input[type=checkbox].brown:checked:active::before {
+  background: #8b4136;
+}
+input[type=checkbox].brown.type-x:checked::before, input[type=checkbox].brown.type-x:checked::after, input[type=checkbox].brown.type-x:active::before, input[type=checkbox].brown.type-x:active::after, input[type=checkbox].brown.type-x:checked:active::before, input[type=checkbox].brown.type-x:checked:active::after {
+  background: #8b4136;
+}
+input[type=checkbox].brown.type-k:checked::before, input[type=checkbox].brown.type-k:active::before, input[type=checkbox].brown.type-k:checked:active::before {
+  background: transparent;
+  border-color: #8b4136;
+  border-top: none;
+  border-right: none;
+}
+input[type=checkbox].teal {
+  border-color: #00796B;
+}
+input[type=checkbox].teal:checked::before, input[type=checkbox].teal:active::before, input[type=checkbox].teal:checked:active::before {
+  background: #00796B;
+}
+input[type=checkbox].teal.type-x:checked::before, input[type=checkbox].teal.type-x:checked::after, input[type=checkbox].teal.type-x:active::before, input[type=checkbox].teal.type-x:active::after, input[type=checkbox].teal.type-x:checked:active::before, input[type=checkbox].teal.type-x:checked:active::after {
+  background: #00796B;
+}
+input[type=checkbox].teal.type-k:checked::before, input[type=checkbox].teal.type-k:active::before, input[type=checkbox].teal.type-k:checked:active::before {
+  background: transparent;
+  border-color: #00796B;
+  border-top: none;
+  border-right: none;
+}
+input[type=checkbox].pink {
+  border-color: #B20056;
+}
+input[type=checkbox].pink:checked::before, input[type=checkbox].pink:active::before, input[type=checkbox].pink:checked:active::before {
+  background: #B20056;
+}
+input[type=checkbox].pink.type-x:checked::before, input[type=checkbox].pink.type-x:checked::after, input[type=checkbox].pink.type-x:active::before, input[type=checkbox].pink.type-x:active::after, input[type=checkbox].pink.type-x:checked:active::before, input[type=checkbox].pink.type-x:checked:active::after {
+  background: #B20056;
+}
+input[type=checkbox].pink.type-k:checked::before, input[type=checkbox].pink.type-k:active::before, input[type=checkbox].pink.type-k:checked:active::before {
+  background: transparent;
+  border-color: #B20056;
+  border-top: none;
+  border-right: none;
+}
+
+input[type=radio] {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #282828;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  display: inline-block;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+}
+input[type=radio].size-s {
+  width: 15px;
+  height: 15px;
+}
+input[type=radio].size-m {
+  width: 20px;
+  height: 20px;
+}
+input[type=radio].size-l {
+  width: 30px;
+  height: 30px;
+}
+input[type=radio]:checked::before, input[type=radio]:active::before, input[type=radio]:checked:active::before {
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  content: " ";
+  border-radius: 100%;
+  height: 80%;
+  width: 80%;
+  background: #282828;
+  z-index: 10;
+}
+input[type=radio].radio-o:checked::before, input[type=radio].radio-o:checked::after, input[type=radio].radio-o:active::before, input[type=radio].radio-o:active::after, input[type=radio].radio-o:checked:active::before, input[type=radio].radio-o:checked:active::after {
+  display: block;
+  position: absolute;
+  content: " ";
+  border-radius: 100%;
+  height: 50%;
+  width: 50%;
+  background: #ffffff;
+  z-index: 10;
+  top: 25%;
+  left: 25%;
+}
+input[type=radio].radio-O.size-s {
+  border: 5px solid #282828;
+}
+input[type=radio].radio-O.size-m {
+  border: 7px solid #282828;
+}
+input[type=radio].radio-O.size-l {
+  border: 11px solid #282828;
+}
+input[type=radio].radio-O:checked::before, input[type=radio].radio-O:active::before, input[type=radio].radio-O:checked:active::before {
+  display: block;
+  position: absolute;
+  content: " ";
+  border-radius: 100%;
+  height: 150%;
+  width: 150%;
+  background: #282828;
+  z-index: 10;
+  top: -25%;
+  left: -25%;
+}
+input[type=radio].white {
+  border-color: #ffffff;
+}
+input[type=radio].white:checked::before, input[type=radio].white:active::before, input[type=radio].white:checked:active::before {
+  background: #ffffff;
+}
+input[type=radio].white.radio-o {
+  background: #ffffff;
+}
+input[type=radio].white.radio-O {
+  border-color: #ffffff;
+}
+input[type=radio].white.radio-O:checked::before, input[type=radio].white.radio-O:active::before, input[type=radio].white.radio-O:checked:active::before {
+  background: #ffffff;
+}
+input[type=radio].black {
+  border-color: #000000;
+}
+input[type=radio].black:checked::before, input[type=radio].black:active::before, input[type=radio].black:checked:active::before {
+  background: #000000;
+}
+input[type=radio].black.radio-o {
+  background: #000000;
+}
+input[type=radio].black.radio-O {
+  border-color: #000000;
+}
+input[type=radio].black.radio-O:checked::before, input[type=radio].black.radio-O:active::before, input[type=radio].black.radio-O:checked:active::before {
+  background: #000000;
+}
+input[type=radio].dark {
+  border-color: #282828;
+}
+input[type=radio].dark:checked::before, input[type=radio].dark:active::before, input[type=radio].dark:checked:active::before {
+  background: #282828;
+}
+input[type=radio].dark.radio-o {
+  background: #282828;
+}
+input[type=radio].dark.radio-O {
+  border-color: #282828;
+}
+input[type=radio].dark.radio-O:checked::before, input[type=radio].dark.radio-O:active::before, input[type=radio].dark.radio-O:checked:active::before {
+  background: #282828;
+}
+input[type=radio].light {
+  border-color: #e7e3e7;
+}
+input[type=radio].light:checked::before, input[type=radio].light:active::before, input[type=radio].light:checked:active::before {
+  background: #e7e3e7;
+}
+input[type=radio].light.radio-o {
+  background: #e7e3e7;
+}
+input[type=radio].light.radio-O {
+  border-color: #e7e3e7;
+}
+input[type=radio].light.radio-O:checked::before, input[type=radio].light.radio-O:active::before, input[type=radio].light.radio-O:checked:active::before {
+  background: #e7e3e7;
+}
+input[type=radio].green {
+  border-color: #119955;
+}
+input[type=radio].green:checked::before, input[type=radio].green:active::before, input[type=radio].green:checked:active::before {
+  background: #119955;
+}
+input[type=radio].green.radio-o {
+  background: #119955;
+}
+input[type=radio].green.radio-O {
+  border-color: #119955;
+}
+input[type=radio].green.radio-O:checked::before, input[type=radio].green.radio-O:active::before, input[type=radio].green.radio-O:checked:active::before {
+  background: #119955;
+}
+input[type=radio].blue {
+  border-color: #1034A6;
+}
+input[type=radio].blue:checked::before, input[type=radio].blue:active::before, input[type=radio].blue:checked:active::before {
+  background: #1034A6;
+}
+input[type=radio].blue.radio-o {
+  background: #1034A6;
+}
+input[type=radio].blue.radio-O {
+  border-color: #1034A6;
+}
+input[type=radio].blue.radio-O:checked::before, input[type=radio].blue.radio-O:active::before, input[type=radio].blue.radio-O:checked:active::before {
+  background: #1034A6;
+}
+input[type=radio].purple {
+  border-color: #780eb1;
+}
+input[type=radio].purple:checked::before, input[type=radio].purple:active::before, input[type=radio].purple:checked:active::before {
+  background: #780eb1;
+}
+input[type=radio].purple.radio-o {
+  background: #780eb1;
+}
+input[type=radio].purple.radio-O {
+  border-color: #780eb1;
+}
+input[type=radio].purple.radio-O:checked::before, input[type=radio].purple.radio-O:active::before, input[type=radio].purple.radio-O:checked:active::before {
+  background: #780eb1;
+}
+input[type=radio].red {
+  border-color: #cd0033;
+}
+input[type=radio].red:checked::before, input[type=radio].red:active::before, input[type=radio].red:checked:active::before {
+  background: #cd0033;
+}
+input[type=radio].red.radio-o {
+  background: #cd0033;
+}
+input[type=radio].red.radio-O {
+  border-color: #cd0033;
+}
+input[type=radio].red.radio-O:checked::before, input[type=radio].red.radio-O:active::before, input[type=radio].red.radio-O:checked:active::before {
+  background: #cd0033;
+}
+input[type=radio].orange {
+  border-color: #F55302;
+}
+input[type=radio].orange:checked::before, input[type=radio].orange:active::before, input[type=radio].orange:checked:active::before {
+  background: #F55302;
+}
+input[type=radio].orange.radio-o {
+  background: #F55302;
+}
+input[type=radio].orange.radio-O {
+  border-color: #F55302;
+}
+input[type=radio].orange.radio-O:checked::before, input[type=radio].orange.radio-O:active::before, input[type=radio].orange.radio-O:checked:active::before {
+  background: #F55302;
+}
+input[type=radio].yellow {
+  border-color: #F7BE00;
+}
+input[type=radio].yellow:checked::before, input[type=radio].yellow:active::before, input[type=radio].yellow:checked:active::before {
+  background: #F7BE00;
+}
+input[type=radio].yellow.radio-o {
+  background: #F7BE00;
+}
+input[type=radio].yellow.radio-O {
+  border-color: #F7BE00;
+}
+input[type=radio].yellow.radio-O:checked::before, input[type=radio].yellow.radio-O:active::before, input[type=radio].yellow.radio-O:checked:active::before {
+  background: #F7BE00;
+}
+input[type=radio].brown {
+  border-color: #8b4136;
+}
+input[type=radio].brown:checked::before, input[type=radio].brown:active::before, input[type=radio].brown:checked:active::before {
+  background: #8b4136;
+}
+input[type=radio].brown.radio-o {
+  background: #8b4136;
+}
+input[type=radio].brown.radio-O {
+  border-color: #8b4136;
+}
+input[type=radio].brown.radio-O:checked::before, input[type=radio].brown.radio-O:active::before, input[type=radio].brown.radio-O:checked:active::before {
+  background: #8b4136;
+}
+input[type=radio].teal {
+  border-color: #00796B;
+}
+input[type=radio].teal:checked::before, input[type=radio].teal:active::before, input[type=radio].teal:checked:active::before {
+  background: #00796B;
+}
+input[type=radio].teal.radio-o {
+  background: #00796B;
+}
+input[type=radio].teal.radio-O {
+  border-color: #00796B;
+}
+input[type=radio].teal.radio-O:checked::before, input[type=radio].teal.radio-O:active::before, input[type=radio].teal.radio-O:checked:active::before {
+  background: #00796B;
+}
+input[type=radio].pink {
+  border-color: #B20056;
+}
+input[type=radio].pink:checked::before, input[type=radio].pink:active::before, input[type=radio].pink:checked:active::before {
+  background: #B20056;
+}
+input[type=radio].pink.radio-o {
+  background: #B20056;
+}
+input[type=radio].pink.radio-O {
+  border-color: #B20056;
+}
+input[type=radio].pink.radio-O:checked::before, input[type=radio].pink.radio-O:active::before, input[type=radio].pink.radio-O:checked:active::before {
+  background: #B20056;
+}
+
 /*# sourceMappingURL=nyno-ui.css.map */
