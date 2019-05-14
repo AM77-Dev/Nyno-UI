@@ -12,18 +12,18 @@ input[type="radio"]{
     cursor: pointer;
 
     &.size-s{
-        width: $small-size-radio;
-        height: $small-size-radio;
+        width: $small-radio;
+        height: $small-radio;
     }
 
     &.size-m{
-        width: $medium-size-radio;
-        height: $medium-size-radio;
+        width: $medium-radio;
+        height: $medium-radio;
     }
 
     &.size-l{
-        width: $large-size-radio;
-        height: $large-size-radio;
+        width: $large-radio;
+        height: $large-radio;
     }
     
     &:checked, &:active, &:checked:active {
@@ -93,7 +93,7 @@ input[type="radio"]{
         }
     }
 
-    @each $name, $color in $input-colors {
+    @each $name, $color in $all-colors {
 
         &.#{$name}{
             border-color: $color;

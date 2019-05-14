@@ -153,7 +153,7 @@ input[type="checkbox"]{
         }
     }
 
-    @each $name, $color in $input-colors {
+    @each $name, $color in $all-colors {
 
         &.#{$name}{
             border-color: $color;

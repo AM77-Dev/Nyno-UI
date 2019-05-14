@@ -28,7 +28,7 @@ input[type="password"].input{
     }
 
 
-    @each $name, $color in $input-colors {
+    @each $name, $color in $all-colors {
 
         &.#{$name}{
             &:hover{
@@ -62,7 +62,7 @@ input[type="password"].input{
         border-right: none;
 
         
-        @each $name, $color in $input-colors {
+        @each $name, $color in $all-colors {
 
             &.#{$name}{
 
