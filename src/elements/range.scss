@@ -1,0 +1,328 @@
+input[type=range] {
+    -webkit-appearance: none;
+    background: transparent;
+    
+    &::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 10px;
+        cursor: pointer;
+        background: $light;
+        border-radius: 1.3px;
+        transition: all 250ms ease;
+    }
+
+    &::-webkit-slider-thumb {
+        border: 1px solid $dark;
+        height: 18px;
+        width: 18px;
+        border-radius: 3px;
+        background: $light;
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -14px;
+        transition: all 250ms ease;
+    }
+
+    &::-moz-range-track {
+        width: 100%;
+        height: 9px;
+        cursor: pointer;
+        background: $light;
+        border-radius: 1.3px;
+        transition: all 250ms ease;
+    }
+    
+    &::-moz-range-thumb {
+        border: 1px solid $dark;
+        height: 18px;
+        width: 18px;
+        border-radius: 100%;
+        background: $light;
+        cursor: pointer;
+        transition: all 250ms ease;
+    }
+
+    &.range-s{
+        &::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 7px;
+            cursor: pointer;
+            background: $light;
+            border-radius: 1.3px;
+            transition: all 250ms ease;
+        }
+    
+        &::-webkit-slider-thumb {
+            border: 1px solid $dark;
+            height: 12px;
+            width: 12px;
+            border-radius: 3px;
+            background: $light;
+            cursor: pointer;
+            -webkit-appearance: none;
+            margin-top: -14px;
+            transition: all 250ms ease;
+        }
+    
+        &::-moz-range-track {
+            width: 100%;
+            height: 7px;
+            cursor: pointer;
+            background: $light;
+            border-radius: 1.3px;
+            transition: all 250ms ease;
+        }
+    
+        &::-moz-range-thumb {
+            border: 1px solid $dark;
+            height: 12px;
+            width: 12px;
+            border-radius: 100%;
+            background: $light;
+            cursor: pointer;
+            transition: all 250ms ease;
+        }
+    }
+
+    &.range-l{
+        &::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 15px;
+            cursor: pointer;
+            background: $light;
+            border-radius: 1.3px;
+            transition: all 250ms ease;
+        }
+    
+        &::-webkit-slider-thumb {
+            border: 1px solid $dark;
+            height: 25px;
+            width: 25px;
+            border-radius: 3px;
+            background: $light;
+            cursor: pointer;
+            -webkit-appearance: none;
+            margin-top: -14px;
+            transition: all 250ms ease;
+        }
+    
+        &::-moz-range-track {
+            width: 100%;
+            height: 15px;
+            cursor: pointer;
+            background: $light;
+            border-radius: 1.3px;
+            transition: all 250ms ease;
+        }
+    
+        &::-moz-range-thumb {
+            border: 1px solid $dark;
+            height: 25px;
+            width: 25px;
+            border-radius: 100%;
+            background: $light;
+            cursor: pointer;
+            transition: all 250ms ease;
+        }
+    }
+
+    &:hover{
+        &::-moz-range-thumb{
+            background: $dark;
+            box-shadow: 0px 0px 5px -1px $dark
+        }
+
+        &::-webkit-slider-thumb {
+            background: $dark;
+            box-shadow: 0px 0px 5px -1px $dark
+        }
+    }
+
+    &:focus{
+        cursor: pointer;
+        outline: none;
+       
+        &::-webkit-slider-runnable-track {
+            background: $light;
+        }
+        
+        &::-webkit-slider-thumb {
+            background: $dark;
+        }
+
+        &::-moz-range-track {
+            background: $light;
+        }
+
+        &::-moz-range-thumb{
+            background: $dark;
+        }
+    }
+
+    @each $name, $color in $all-colors {
+
+        &.#{$name}{
+
+            &::-webkit-slider-thumb {
+                background: $color;
+                border-color: $color;
+            }
+
+            &::-moz-range-thumb{
+                background: $color;
+                border-color: $color;
+            }
+
+            &:focus,
+            &:hover{
+                cursor: pointer;
+                outline: none;
+               
+                &::-webkit-slider-runnable-track {
+                    background: $color;
+                }
+                
+                &::-webkit-slider-thumb {
+                    box-shadow: 0px 0px 5px -1px $color;
+                }
+        
+                &::-moz-range-track {
+                    background: $color;
+                }
+        
+                &::-moz-range-thumb{
+                    
+                    box-shadow: 0px 0px 5px -1px $color;
+                }
+            }
+        }
+
+
+        &.#{$name}-o{
+
+            &::-webkit-slider-thumb {
+                border-color: $color;
+            }
+
+            &::-moz-range-thumb{
+                border-color: $color;
+            }
+
+            &:focus,
+            &:hover{
+                cursor: pointer;
+                outline: none;
+               
+                &::-webkit-slider-runnable-track {
+                    background: $light;
+                }
+                
+                &::-webkit-slider-thumb {
+                    background: $color;
+                    border-color: $color;
+                    box-shadow: 0px 0px 5px -1px $color;
+                }
+        
+                &::-moz-range-track {
+                    background: $light;
+                }
+        
+                &::-moz-range-thumb{
+                    background: $color;
+                    border-color: $color;
+                    box-shadow: 0px 0px 5px -1px $color;
+                }
+            }
+        }
+    }
+
+
+
+    &:disabled{
+
+        &::-webkit-slider-thumb {
+            border-color: $disabled;
+        }
+
+        &::-moz-range-thumb{
+            border-color: $disabled;
+        }
+
+        &:hover{
+            cursor: not-allowed;
+            outline: none;
+           
+            &::-webkit-slider-runnable-track {
+                background: $disabled;
+            }
+            
+            &::-webkit-slider-thumb {
+                background: $disabled;
+                border-color: $disabled;
+                box-shadow: 0px 0px 5px -1px $disabled;
+            }
+    
+            &::-moz-range-track {
+                background: $disabled;
+            }
+    
+            &::-moz-range-thumb{
+                background: $disabled;
+                border-color: $disabled;
+                box-shadow: 0px 0px 5px -1px $disabled;
+            }
+        }
+    }
+
+
+    &:disabled{
+        cursor: not-allowed;
+        &::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 10px;
+            background: transparent;
+            border-radius: 1.3px;
+            transition: all 250ms ease;
+        }
+    
+        &::-webkit-slider-thumb {
+            border: 1px solid $dark;
+            height: 18px;
+            width: 18px;
+            border-radius: 3px;
+            background: transparent;
+            -webkit-appearance: none;
+            margin-top: -14px;
+            transition: all 250ms ease;
+        }
+    
+        &::-moz-range-track {
+            width: 100%;
+            height: 9px;
+            background: $disabled;
+            border-radius: 1.3px;
+            transition: all 250ms ease;
+        }
+        
+        &::-moz-range-thumb {
+            border: 1px solid $dark;
+            height: 18px;
+            width: 18px;
+            border-radius: 100%;
+            background: $disabled;
+            transition: all 250ms ease;
+        }
+
+        &:hover{
+            &::-moz-range-thumb{
+                box-shadow: none
+            }
+    
+            &::-webkit-slider-thumb {
+                box-shadow: none
+            }
+        }
+
+    }
+
+}
