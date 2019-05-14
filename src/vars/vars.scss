@@ -20,3 +20,20 @@ $small-font: .7em !default;
 
 // border radius
 $border-radius: 3px !default;
+
+// color array
+$all-colors: (
+    'white' : $color-white,
+    'black' : $color-black,
+    'dark' : $dark,
+    'light' : $light,
+    'green' : $green,
+    'blue' : $blue,
+    'purple' : $purple,
+    'red' : $red,
+    'orange' : $orange,
+    'yellow' : $yellow,
+    'brown' : $brown,
+    'teal' : $teal,
+    'pink' : $pink
+) !default;
