@@ -68,7 +68,6 @@ input[type="checkbox"]{
                 transform-origin: bottom left;
             }
 
-
             &.size-s{
                 &::before, &::after{
                     height: 12px;
@@ -84,7 +83,6 @@ input[type="checkbox"]{
                 }
             }
         
-        
             &.size-l{
                 &::before, &::after{
                     height: 30px;
@@ -99,6 +97,42 @@ input[type="checkbox"]{
                     transform: rotate(45deg) translateX(-5.5px) translateY(-6px);
                 }
             }
+        }
+    }
+
+    &.type-k{
+        &:checked, &:active, &:checked:active {
+
+            &::before{
+                display: block;
+                position: absolute;
+                content: " ";
+                border: 3px solid $dark;
+                border-radius: 0;
+                height: 40%;
+                width: 80%;
+                background: transparent;
+                z-index: 10;
+                top: 0;
+                left: 0;
+
+                transform: rotate(-50deg) translateX(-6px) translateY(6px);
+                transform-origin: top left ;
+            }
+
+            &.size-s{
+                &::before{
+                    transform: rotate(-50deg) translateX(-4px) translateY(4px);
+                }
+            }
+        
+            &.size-l{    
+                &::before{ 
+                    border: 4px solid $dark;
+                    transform: rotate(-50deg) translateX(-10px) translateY(11px);
+                }
+            }
+
         }
     }
 
@@ -134,6 +168,17 @@ input[type="checkbox"]{
                 &:checked, &:active, &:checked:active {
                     &::before, &::after{
                         background: $color;
+                    }
+                }
+            }
+
+            &.type-k{
+                &:checked, &:active, &:checked:active {
+                    &::before{
+                        background: transparent;
+                        border-color: $color;
+                        border-top: none;
+                        border-right: none;
                     }
                 }
             }
