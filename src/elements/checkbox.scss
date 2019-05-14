@@ -12,18 +12,18 @@ input[type="checkbox"]{
     cursor: pointer;
 
     &.size-s{
-        width: 15px;
-        height: 15px;
+        width: $small-checkbox;
+        height: $small-checkbox;
     }
 
     &.size-m{
-        width: 20px;
-        height: 20px;
+        width: $medium-checkbox;
+        height: $medium-checkbox;
     }
 
     &.size-l{
-        width: 30px;
-        height: 30px;
+        width: $large-checkbox;
+        height: $large-checkbox;
     }
     
     &:checked, &:active, &:checked:active {
@@ -42,7 +42,7 @@ input[type="checkbox"]{
         }
     }
 
-    &.type-x{
+    &.check-x{
         &:checked, &:active, &:checked:active {
 
             &::before, &::after{
@@ -100,7 +100,7 @@ input[type="checkbox"]{
         }
     }
 
-    &.type-k{
+    &.check-k{
         &:checked, &:active, &:checked:active {
 
             &::before{
