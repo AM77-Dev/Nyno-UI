@@ -1,0 +1,66 @@
+textarea {
+    appearance: none;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    min-height: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: $dark;
+    background-color: $lighter;
+    border: 1px solid $dark;
+    border-radius: $border-radius;
+
+    &.textarea-l{
+        font-size: $large-font;
+    }
+
+    &.textarea-m{
+        font-size: $medium-font;
+    }
+
+    &.textarea-s{
+        font-size: $small-font;
+    }
+
+    &.square{
+        border-radius: 0;
+    }
+
+    @each $name, $color in $all-colors{
+        &.#{$name}{
+            &:hover{
+                box-shadow: 0 0 2px 0px $color
+            }
+            &:focus {
+                border-color: $color;
+                outline: none;
+                box-shadow: 0 0 2px 0px $color inset
+            }
+        }
+
+        &.#{$name}-o{
+            color: $color;
+            border-color: $color;
+            &:hover{
+                box-shadow: 0 0 2px 0px $color
+            }
+            &:focus {
+                border-color: $color;
+                outline: none;
+                box-shadow: 0 0 2px 0px $color inset
+            }
+        }
+    }
+
+    &:disabled{
+        color: $disabled;
+        border-color: $disabled;
+        cursor: not-allowed;
+        &:hover{
+            box-shadow: 0 0 2px 0px $disabled
+        }
+    }
+
+}
