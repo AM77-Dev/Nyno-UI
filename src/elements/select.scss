@@ -1,0 +1,73 @@
+select {
+    overflow: hidden;
+    outline: none;
+    background: $light;
+    border: 1px solid $light;
+    color: $dark;
+    border: none;
+    border-radius: $border-radius;
+    font-size: 1em;
+    padding: 5px;
+
+    &.select-l{
+        font-size: $large-font;
+    }
+
+    &.select-m{
+        font-size: $medium-font;
+    }
+
+    &.select-s{
+        font-size: $small-font;
+    }
+
+    &.square{
+        border-radius: 0;
+    }
+
+    &.round{
+        border-radius: 2em;
+        padding-left: 1em;
+    }
+
+    &:hover{
+        border-color: $dark;
+        box-shadow: 0px 0px 2px 0px $dark;
+    }
+
+    &:active,
+    &:focus{
+        border-color: $dark;
+        box-shadow:  0px 0px 2px 0px $dark inset;
+    }
+
+    @each $name, $color in $all-colors {
+        &.#{$name}{
+            background: $color;
+            border: 1px solid $color;
+        }
+
+        &.#{$name}-o{
+            color: $color;
+            border: 1px solid $color;
+            background: transparent;
+            &:hover{
+                border-color: $color;
+                box-shadow: 0px 0px 2px 0px $color;
+            }
+        
+            &:active,
+            &:focus{
+                border-color: $color;
+                box-shadow:  0px 0px 2px 0px $color inset;
+            }
+        }
+    }
+
+    &:disabled{
+        cursor: not-allowed;
+        box-shadow: none;
+        background: $disabled;
+    }
+    
+}
