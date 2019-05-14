@@ -1,0 +1,124 @@
+input[type="radio"]{
+    
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid $dark;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    display: inline-block;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+
+    &.size-s{
+        width: $small-size-radio;
+        height: $small-size-radio;
+    }
+
+    &.size-m{
+        width: $medium-size-radio;
+        height: $medium-size-radio;
+    }
+
+    &.size-l{
+        width: $large-size-radio;
+        height: $large-size-radio;
+    }
+    
+    &:checked, &:active, &:checked:active {
+
+        &::before{
+            display: block;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            content: " ";
+            border-radius: 100%;
+            height: 80%;
+            width: 80%;
+            background: $dark;
+            z-index: 10;
+        }
+    }
+
+    &.radio-o{
+        &:checked, &:active, &:checked:active {
+
+            &::before, &::after{
+                display: block;
+                position: absolute;
+                content: " ";
+                border-radius: 100%;
+                height: 50%;
+                width: 50%;
+                background: $color-white;
+                z-index: 10;
+                top: 25%;
+                left: 25%;
+            }
+
+        }
+    }
+
+    &.radio-O{
+
+        &.size-s{
+            border: 5px solid $dark;
+        }
+    
+        &.size-m{
+            border: 7px solid $dark;
+        }
+    
+        &.size-l{
+            border: 11px solid $dark;
+        }
+
+        &:checked, &:active, &:checked:active {
+
+            &::before{
+                display: block;
+                position: absolute;
+                content: " ";
+                border-radius: 100%;
+                height: 150%;
+                width: 150%;
+                background: $dark;
+                z-index: 10;
+                top: -25%;
+                left: -25%;
+            }
+
+        }
+    }
+
+    @each $name, $color in $input-colors {
+
+        &.#{$name}{
+            border-color: $color;
+            
+            &:checked, &:active, &:checked:active {
+                &::before{        
+                    background: $color;
+                }
+            }
+
+            &.radio-o{
+                background: $color;
+            }
+
+            &.radio-O{
+                border-color: $color;
+                &:checked, &:active, &:checked:active {
+                    &::before{
+                        background: $color;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}
