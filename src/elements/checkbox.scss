@@ -1,0 +1,144 @@
+input[type="checkbox"]{
+    
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid $dark;
+    width: 20px;
+    height: 20px;
+    border-radius: $border-radius;
+    display: inline-block;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+
+    &.size-s{
+        width: 15px;
+        height: 15px;
+    }
+
+    &.size-m{
+        width: 20px;
+        height: 20px;
+    }
+
+    &.size-l{
+        width: 30px;
+        height: 30px;
+    }
+    
+    &:checked, &:active, &:checked:active {
+
+        &::before{
+            display: block;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            content: " ";
+            border-radius: $border-radius;
+            height: 80%;
+            width: 80%;
+            background: $dark;
+            z-index: 10;
+        }
+    }
+
+    &.type-x{
+        &:checked, &:active, &:checked:active {
+
+            &::before, &::after{
+                display: block;
+                position: absolute;
+                content: " ";
+                border-radius: $border-radius;
+                height: 19px;
+                width: 4px;
+                background: $dark;
+                z-index: 10;
+                top: 0;
+                left: 0;
+            }
+
+            &::before{
+                transform: rotate(-45deg) translateX(-2px) translateY(2px);
+                transform-origin: top left ;
+            }
+
+            &::after{
+                transform: rotate(45deg) translateX(-4px) translateY(-4px);
+                transform-origin: bottom left;
+            }
+
+
+            &.size-s{
+                &::before, &::after{
+                    height: 12px;
+                    width: 3px;
+                }
+    
+                &::before{
+                    transform: rotate(-45deg) translateX(-1.5px) translateY(2px);
+                }
+    
+                &::after{
+                    transform: rotate(45deg) translateX(-2px) translateY(-2.5px);
+                }
+            }
+        
+        
+            &.size-l{
+                &::before, &::after{
+                    height: 30px;
+                    width: 5px;
+                }
+    
+                &::before{
+                    transform: rotate(-45deg) translateX(-2.5px) translateY(3.5px);
+                }
+    
+                &::after{
+                    transform: rotate(45deg) translateX(-5.5px) translateY(-6px);
+                }
+            }
+        }
+    }
+
+    &.square{
+        border-radius: 0;
+        &:checked, &:active, &:checked:active{
+            &::before{
+                border-radius: 0;
+            }
+        }
+
+        &.type-x{
+            &:checked, &:active, &:checked:active {
+                &::before, &::after{
+                    border-radius: $border-radius;
+                }
+            }
+        }
+    }
+
+    @each $name, $color in $input-colors {
+
+        &.#{$name}{
+            border-color: $color;
+            
+            &:checked, &:active, &:checked:active {
+                &::before{        
+                    background: $color;
+                }
+            }
+
+            &.type-x{
+                &:checked, &:active, &:checked:active {
+                    &::before, &::after{
+                        background: $color;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
