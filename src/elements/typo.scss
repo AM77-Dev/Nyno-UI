@@ -90,3 +90,44 @@ blockquote {
         }
     }
 }
+
+a {
+    text-decoration: none;
+    color: $dark;
+    font-weight: 400;
+    transition: opacity 250ms ease-out;
+    font-size: 1em;
+
+    &.a-l{
+        font-size: $large-font;
+    }
+    
+    &.a-m{
+        font-size: $medium-font;
+    }
+
+    &.a-s{
+        font-size: $small-font;
+    }
+
+    &:active {
+        opacity: 1;
+    }
+
+    @each $name, $color in $all-colors {
+        &.#{$name}{
+            color: $color;
+            &:focus,
+            &:hover{
+                color: $dark;
+            }
+        }
+
+        &.#{$name}-o{
+            &:focus,
+            &:hover{
+                color: $color;
+            }
+        }
+    }
+}
