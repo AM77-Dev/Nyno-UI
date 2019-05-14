@@ -26,7 +26,9 @@ input[type="checkbox"]{
         height: $large-checkbox;
     }
     
-    &:checked, &:active, &:checked:active {
+    &:checked, 
+    &:active, 
+    &:checked:active {
 
         &::before{
             display: block;
@@ -43,9 +45,12 @@ input[type="checkbox"]{
     }
 
     &.check-x{
-        &:checked, &:active, &:checked:active {
+        &:checked, 
+        &:active, 
+        &:checked:active {
 
-            &::before, &::after{
+            &::before, 
+            &::after{
                 display: block;
                 position: absolute;
                 content: " ";
@@ -69,7 +74,8 @@ input[type="checkbox"]{
             }
 
             &.size-s{
-                &::before, &::after{
+                &::before, 
+                &::after{
                     height: 12px;
                     width: 3px;
                 }
@@ -84,7 +90,8 @@ input[type="checkbox"]{
             }
         
             &.size-l{
-                &::before, &::after{
+                &::before, 
+                &::after{
                     height: 30px;
                     width: 5px;
                 }
@@ -101,7 +108,9 @@ input[type="checkbox"]{
     }
 
     &.check-k{
-        &:checked, &:active, &:checked:active {
+        &:checked, 
+        &:active, 
+        &:checked:active {
 
             &::before{
                 display: block;
@@ -138,14 +147,18 @@ input[type="checkbox"]{
 
     &.square{
         border-radius: 0;
-        &:checked, &:active, &:checked:active{
+        &:checked, 
+        &:active, 
+        &:checked:active{
             &::before{
                 border-radius: 0;
             }
         }
 
         &.type-x{
-            &:checked, &:active, &:checked:active {
+            &:checked, 
+            &:active, 
+            &:checked:active {
                 &::before, &::after{
                     border-radius: $border-radius;
                 }
@@ -158,14 +171,18 @@ input[type="checkbox"]{
         &.#{$name}{
             border-color: $color;
             
-            &:checked, &:active, &:checked:active {
+            &:checked, 
+            &:active, 
+            &:checked:active {
                 &::before{        
                     background: $color;
                 }
             }
 
             &.type-x{
-                &:checked, &:active, &:checked:active {
+                &:checked, 
+                &:active, 
+                &:checked:active {
                     &::before, &::after{
                         background: $color;
                     }
@@ -173,7 +190,9 @@ input[type="checkbox"]{
             }
 
             &.type-k{
-                &:checked, &:active, &:checked:active {
+                &:checked, 
+                &:active, 
+                &:checked:active {
                     &::before{
                         background: transparent;
                         border-color: $color;
