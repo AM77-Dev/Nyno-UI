@@ -1,0 +1,39 @@
+.message{
+    font-size: $medium-font;
+    font-family: "Source sans pro";
+    padding: 1em;
+    color: $dark;
+    margin-bottom: 1em;
+    background: $lighter;
+    border: 1px solid $light;
+    border-radius: $border-radius;
+
+    &.message-s{
+        font-size: $small-font;
+    }
+
+    &.message-l{
+        font-size: $large-font;
+    }
+
+    &.square{
+        border-radius: 0;
+    }
+
+    &.round{
+        border-radius: 2em;
+    }
+
+    @each $name, $color in $all-colors {
+        &.#{$name}{
+            background: get-color("lighter", $name);
+            border: 1px solid get-color("dark", $name);
+        }
+
+        &.#{$name}-o{
+            color: get-color("dark", $name);
+            background: get-color("lighter", $name);
+            border: 1px solid get-color("dark", $name);
+        }
+    }
+}
