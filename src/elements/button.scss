@@ -49,370 +49,46 @@ input[type='submit'],
         outline: none;
     }
 
-    &.green{
-        background: $green;
-        &._dark:hover{
-            background: $dark-green;
-            color: $light
-        }
-
-        &._light:hover{
-            background: $light-green;
-            color: $dark
-        }
-    }
-
-    &.dark-green{
-        background: $dark-green;
-        color: $light;
-        &._dark:hover{
-            background: $darker-green;
-            color: $lighter
-        }
-
-        &._light:hover{
-            background: $light-green;
-            color: $darker
-        }
-    }
-
-    &.light-green{
-        background: $light-green;
-        &._dark:hover{
-            background: $dark-green;
-            color: $lighter
-        }
-
-        &._light:hover{
-            background: $lighter-green;
-            color: $darker
-        }
-    }
-
-    &.blue{
-        background: $blue;
-        color: $light;
-        &._dark:hover{
-            background: $dark-blue;
-            color: $lighter
+    
+    @each $name, $color in $all-colors {
+        &.#{$name}{
+            background: get-color("", $name);
+            &._dark:hover{
+                background: get-color("dark", $name);
+                color: $light
+            }
+    
+            &._light:hover{
+                background: get-color("light", $name);
+                color: $dark
+            }
         }
     
-        &._light:hover{
-            background: $light-blue;
-            color: $dark
-        }
-    }
+        &.dark-#{$name}{
+            background: get-color("dark", $name);
+            color: $light;
+            &._dark:hover{
+                background: get-color("darker", $name);
+                color: $lighter
+            }
     
-    &.dark-blue{
-        background: $dark-blue;
-        color: $light;
-        &._dark:hover{
-            background: $darker-blue;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            background: $light-blue;
-            color: $darker
-        }
-    }
-    
-    &.light-blue{
-        background: $light-blue;
-        &._dark:hover{
-            background: $dark-blue;
-            color: $lighter
+            &._light:hover{
+                background: get-color("light", $name);
+                color: $darker
+            }
         }
     
-        &._light:hover{
-            background: $lighter-blue;
-            color: $darker
-        }
-    }
-
-    &.purple{
-        background: $purple;
-        color: $light;
-        &._dark:hover{
-            background: $dark-purple;
-            color: $lighter
-        }
+        &.light-#{$name}{
+            background: get-color("light", $name);
+            &._dark:hover{
+                background: get-color("dark", $name);
+                color: $lighter
+            }
     
-        &._light:hover{
-            background: $light-purple;
-            color: $dark
-        }
-    }
-    
-    &.dark-purple{
-        background: $dark-purple;
-        color: $light;
-        &._dark:hover{
-            background: $darker-purple;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            background: $light-purple;
-            color: $darker
-        }
-    }
-    
-    &.light-purple{
-        background: $light-purple;
-        color: $light;
-        &._dark:hover{
-            background: $dark-purple;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            background: $lighter-purple;
-            color: $darker
-        }
-    }
-
-    &.red{
-        background: $red;
-        &._dark:hover{
-            background: $dark-red;
-            color: $light
-        }
-    
-        &._light:hover{
-            background: $light-red;
-            color: $dark
-        }
-    }
-    
-    &.dark-red{
-        background: $dark-red;
-        color: $light;
-        &._dark:hover{
-            background: $darker-red;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            background: $light-red;
-            color: $darker
-        }
-    }
-    
-    &.light-red{
-        background: $light-red;
-        &._dark:hover{
-            background: $dark-red;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            background: $lighter-red;
-            color: $darker
-        }
-    }
-
-    &.orange{
-        background: $orange;
-        &._dark:hover{
-            background: $dark-orange;
-            color: $light
-        }
-    
-        &._light:hover{
-            background: $light-orange;
-            color: $dark
-        }
-    }
-    
-    &.dark-orange{
-        background: $dark-orange;
-        color: $light;
-        &._dark:hover{
-            background: $darker-orange;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            background: $light-orange;
-            color: $darker
-        }
-    }
-    
-    &.light-orange{
-        background: $light-orange;
-        &._dark:hover{
-            background: $dark-orange;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            background: $lighter-orange;
-            color: $darker
-        }
-    }
-
-    &.yellow{
-        background: $yellow;
-        &._dark:hover{
-            background: $dark-yellow;
-            color: $light
-        }
-    
-        &._light:hover{
-            background: $light-yellow;
-            color: $dark
-        }
-    }
-    
-    &.dark-yellow{
-        background: $dark-yellow;
-        color: $light;
-        &._dark:hover{
-            background: $darker-yellow;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            background: $light-yellow;
-            color: $darker
-        }
-    }
-    
-    &.light-yellow{
-        background: $light-yellow;
-        &._dark:hover{
-            background: $dark-yellow;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            background: $lighter-yellow;
-            color: $darker
-        }
-    }
-
-    &.brown{
-        background: $brown;
-        color: $light;
-        &._dark:hover{
-            background: $dark-brown;
-            color: $lighter;
-        }
-    
-        &._light:hover{
-            background: $light-brown;
-            color: $dark
-        }
-    }
-    
-    &.dark-brown{
-        background: $dark-brown;
-        color: $light;
-        &._dark:hover{
-            background: $darker-brown;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            background: $light-brown;
-            color: $darker
-        }
-    }
-    
-    &.light-brown{
-        background: $light-brown;
-        color: $light;
-        &._dark:hover{
-            background: $dark-brown;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            background: $lighter-brown;
-            color: $darker
-        }
-    }
-
-    &.teal{
-        background: $teal;
-        color: $light;
-        &._dark:hover{
-            background: $dark-teal;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            background: $light-teal;
-            color: $dark
-        }
-    }
-    
-    &.dark-teal{
-        background: $dark-teal;
-        color: $light;
-        &._dark:hover{
-            background: $darker-teal;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            background: $light-teal;
-            color: $darker
-        }
-    }
-    
-    &.light-teal{
-        background: $light-teal;
-        color: $light;
-        &._dark:hover{
-            background: $dark-teal;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            background: $lighter-teal;
-            color: $darker
-        }
-    }
-
-    &.pink{
-        background: $pink;
-        &._dark:hover{
-            background: $dark-pink;
-            color: $light
-        }
-    
-        &._light:hover{
-            background: $light-pink;
-            color: $dark
-        }
-    }
-    
-    &.dark-pink{
-        background: $dark-pink;
-        color: $light;
-        &._dark:hover{
-            background: $darker-pink;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            background: $light-pink;
-            color: $darker
-        }
-    }
-    
-    &.light-pink{
-        background: $light-pink;
-        &._dark:hover{
-            background: $dark-pink;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            background: $lighter-pink;
-            color: $darker
+            &._light:hover{
+                background: get-color("lighter", $name);
+                color: $darker
+            }
         }
     }
 
@@ -439,395 +115,59 @@ input[type='submit'],
     border: 1px solid $light;
     background: transparent;
 
-/*
 
+    @each $name, $color in $all-colors {
+        &.#{$name}{
+            border-color: get-color("", $name);
 
-
-
-
-
-
-fix this with other colors
-
-&.green{
-        border-color: $green;
-        background: transparent;
-
-        &._dark:hover{
-            border-color: $darker-green;
-            background: $darker-green;
-            color: $light
-        }
-    
-        &._light:hover{
-            border-color: $light-green;
-            background: $light-green;
-            color: $lighter
-        }
-    }
-
-
-
-*/
-
-    &.green{
-        border-color: $green;
-        background: transparent;
-
-        &._dark:hover{
-            border-color: $darker-green;
-            background: $darker-green;
-            color: $light
-        }
-    
-        &._light:hover{
-            border-color: $light-green;
-            background: $light-green;
-            color: $lighter
-        }
-    }
-
-    &.dark-green{
-        border-color: $dark-green;
-        background: transparent;
-        color:  $dark-green;
-    
-        &._dark:hover{
-            border-color: $darker-green;
-            background: $darker-green;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            border-color: $light-green;
-            background: $light-green;
-            color: $light
-        }
-    }
-    
-    &.light-green{
-        border-color: $light-green;
-        background: transparent;
-        color:  $light-green;
-    
-        &._dark:hover{
-            border-color: $dark-green;
-            background: $dark-green;
-            color: $light;
-        }
-    
-        &._light:hover{
-            border-color: $lighter-green;
-            background: $lighter-green;
-            color: $light;
-        }
-    }
-
-    &.dark-blue{
-        border-color: $dark-blue;
-        background: transparent;
-        color:  $dark-blue;
-    
-        &._dark:hover{
-            border-color: $darker-blue;
-            background: $darker-blue;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            border-color: $light-blue;
-            background: $light-blue;
-            color: $light
-        }
-    }
-    
-    &.light-blue{
-        border-color: $light-blue;
-        background: transparent;
-        color:  $light-blue;
-    
-        &._dark:hover{
-            border-color: $dark-blue;
-            background: $dark-blue;
-            color: $light;
-        }
-    
-        &._light:hover{
-            border-color: $lighter-blue;
-            background: $lighter-blue;
-            color: $light;
-        }
-    }
-
-    &.dark-purple{
-        border-color: $dark-purple;
-        background: transparent;
-        color:  $dark-purple;
-    
-        &._dark:hover{
-            border-color: $darker-purple;
-            background: $darker-purple;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            border-color: $light-purple;
-            background: $light-purple;
-            color: $light
-        }
-    }
-    
-    &.light-purple{
-        border-color: $light-purple;
-        background: transparent;
-        color:  $light-purple;
-    
-        &._dark:hover{
-            border-color: $dark-purple;
-            background: $dark-purple;
-            color: $light;
-        }
-    
-        &._light:hover{
-            border-color: $lighter-purple;
-            background: $lighter-purple;
-            color: $light;
-        }
-    }
-
-    &.dark-red{
-        border-color: $dark-red;
-        background: transparent;
-        color:  $dark-red;
-    
-        &._dark:hover{
-            border-color: $darker-red;
-            background: $darker-red;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            border-color: $light-red;
-            background: $light-red;
-            color: $light
-        }
-    }
-    
-    &.light-red{
-        border-color: $light-red;
-        background: transparent;
-        color:  $light-red;
-    
-        &._dark:hover{
-            border-color: $dark-red;
-            background: $dark-red;
-            color: $light;
-        }
-    
-        &._light:hover{
-            border-color: $lighter-red;
-            background: $lighter-red;
-            color: $light;
-        }
-    }
-
-    &.dark-orange{
-        border-color: $dark-orange;
-        background: transparent;
-        color:  $dark-orange;
-    
-        &._dark:hover{
-            border-color: $darker-orange;
-            background: $darker-orange;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            border-color: $light-orange;
-            background: $light-orange;
-            color: $light
-        }
-    }
-    
-    &.light-orange{
-        border-color: $light-orange;
-        background: transparent;
-        color:  $light-orange;
-    
-        &._dark:hover{
-            border-color: $dark-orange;
-            background: $dark-orange;
-            color: $light;
-        }
-    
-        &._light:hover{
-            border-color: $lighter-orange;
-            background: $lighter-orange;
-            color: $light;
-        }
-    }
-
-    &.dark-yellow{
-        border-color: $dark-yellow;
-        background: transparent;
-        color:  $dark-yellow;
-    
-        &._dark:hover{
-            border-color: $darker-yellow;
-            background: $darker-yellow;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            border-color: $light-yellow;
-            background: $light-yellow;
-            color: $light
-        }
-    }
-    
-    &.light-yellow{
-        border-color: $light-yellow;
-        background: transparent;
-        color:  $light-yellow;
-    
-        &._dark:hover{
-            border-color: $dark-yellow;
-            background: $dark-yellow;
-            color: $light;
-        }
-    
-        &._light:hover{
-            border-color: $lighter-yellow;
-            background: $lighter-yellow;
-            color: $light;
-        }
-    }
-
-    &.pink{
-        border-color: $pink;
-        background: transparent;
-        color:  $pink;
+            &._dark:hover{
+                border-color: get-color("darker", $name);
+                background: get-color("darker", $name);
+                color: $light
+            }
         
-        &._dark:hover{
-            border-color: $dark-pink;
-            background: $dark-pink;
-            color: $lighter
+            &._light:hover{
+                border-color: get-color("light", $name);
+                background: get-color("light", $name);
+                color: $lighter
+            }
         }
-    
-        &._light:hover{
-            border-color: $light-pink;
-            background: $light-pink;
-            color: $light
+
+        &.dark-#{$name}{
+            border-color: $dark-green;
+            color:  $dark-green;
+        
+            &._dark:hover{
+                border-color: get-color("darker", $name);
+                background: get-color("darker", $name);
+                color: $lighter
+            }
+        
+            &._light:hover{
+                border-color: get-color("light", $name);
+                background: get-color("light", $name);
+                color: $light
+            }
+        }
+        
+        &.light-#{$name}{
+            border-color: get-color("light", $name);
+            color:  $light-green;
+        
+            &._dark:hover{
+                border-color: get-color("dark", $name);
+                background: get-color("dark", $name);
+                color: $light;
+            }
+        
+            &._light:hover{
+                border-color: get-color("lighter", $name);
+                background: get-color("lighter", $name);
+                color: $light;
+            }
         }
     }
 
-    &.dark-brown{
-        border-color: $dark-brown;
-        background: transparent;
-        color:  $dark-brown;
-    
-        &._dark:hover{
-            border-color: $darker-brown;
-            background: $darker-brown;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            border-color: $light-brown;
-            background: $light-brown;
-            color: $light
-        }
-    }
-    
-    &.light-brown{
-        border-color: $light-brown;
-        background: transparent;
-        color:  $light-brown;
-    
-        &._dark:hover{
-            border-color: $dark-brown;
-            background: $dark-brown;
-            color: $light;
-        }
-    
-        &._light:hover{
-            border-color: $lighter-brown;
-            background: $lighter-brown;
-            color: $light;
-        }
-    }
-
-    &.dark-teal{
-        border-color: $dark-teal;
-        background: transparent;
-        color:  $dark-teal;
-    
-        &._dark:hover{
-            border-color: $darker-teal;
-            background: $darker-teal;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            border-color: $light-teal;
-            background: $light-teal;
-            color: $light
-        }
-    }
-    
-    &.light-teal{
-        border-color: $light-teal;
-        background: transparent;
-        color:  $light-teal;
-    
-        &._dark:hover{
-            border-color: $dark-teal;
-            background: $dark-teal;
-            color: $light;
-        }
-    
-        &._light:hover{
-            border-color: $lighter-teal;
-            background: $lighter-teal;
-            color: $light;
-        }
-    }
-    
-    &.dark-pink{
-        border-color: $dark-pink;
-        background: transparent;
-        color:  $dark-pink;
-
-        &._dark:hover{
-            border-color: $darker-pink;
-            background: $darker-pink;
-            color: $lighter
-        }
-    
-        &._light:hover{
-            border-color: $light-pink;
-            background: $light-pink;
-            color: $light
-        }
-    }
-    
-    &.light-pink{
-        border-color: $light-pink;
-        background: transparent;
-        color:  $light-pink;
-
-        &._dark:hover{
-            border-color: $dark-pink;
-            background: $dark-pink;
-            color: $light;
-        }
-    
-        &._light:hover{
-            border-color: $lighter-pink;
-            background: $lighter-pink;
-            color: $light;
-        }
-    }
 }
 
 button.disabled,
