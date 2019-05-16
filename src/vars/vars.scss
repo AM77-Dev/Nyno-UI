@@ -28,6 +28,23 @@ $small-checkbox: 15px;
 $medium-checkbox: 20px;
 $large-checkbox: 30px;
 
+
+// checkbox toggle sizes
+$small-toggle-height: 20px;
+$small-toggle-width: $small-toggle-height * 2.25;
+
+$medium-toggle-height: 30px;
+$medium-toggle-width: $medium-toggle-height * 2.25;
+
+$large-toggle-height: 44px;
+$large-toggle-width: $large-toggle-height * 2.25;
+
+$small-before-toggle:  $small-toggle-height - 4px;
+$medium-before-toggle:  $medium-toggle-height - 4px;
+$large-before-toggle:  $large-toggle-height - 4px;
+
+
+
 // border radius
 $border-radius: 3px !default;
 
