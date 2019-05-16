@@ -137,12 +137,18 @@ ol,
 dl {
     list-style: none;
     margin-bottom: 15px;
+    padding: 0;
+    
     &.list{
-        
-        &.divided > li{
 
+        &.none li{
+            list-style-type: none;
+        }
+
+        &.divided li{
             padding: 10px 15px;
             border-bottom: 1px solid $dark;
+    
             &:last-child{
                 border-bottom: none
             }
