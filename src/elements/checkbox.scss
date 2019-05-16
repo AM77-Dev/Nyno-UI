@@ -281,3 +281,77 @@ input[type="checkbox"].toggle{
         }
     }
 }
+
+input[type="checkbox"].toggle-o{
+    appearance: none;
+    background-color: $light;
+    width: $medium-toggle-o-width;
+    height: $medium-toggle-o-height;
+    border-radius: $medium-toggle-o-height / 2;
+    display: inline-block;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transition: all 250ms ease;
+
+    &::before{
+        display: block;
+        content: "";
+        width: $medium-before-toggle-o;
+        height: $medium-before-toggle-o;
+        background: $dark;
+        border-radius: $medium-before-toggle-o/2;
+        position: absolute;
+        top: - $medium-toggle-o-height ;
+        left: 0px;
+        transition: all 250ms ease;
+    }
+
+    &.size-s{
+        width: $small-toggle-o-width;
+        height: $small-toggle-o-height;
+        border-radius: $small-toggle-o-height / 2;
+
+        &::before{
+            width: $small-before-toggle-o;
+            height: $small-before-toggle-o;
+            border-radius: $small-before-toggle-o/2;
+            top: - $small-toggle-o-height ;
+        }
+    }
+
+    &.size-l{
+        width: $large-toggle-o-width;
+        height: $large-toggle-o-height;
+        border-radius: $large-toggle-o-height / 2;
+
+        &::before{
+            width: $large-before-toggle-o;
+            height: $large-before-toggle-o;
+            border-radius: $large-before-toggle-o/2;
+            top: - $large-toggle-o-height * 2.75 / 3 ;
+        }
+    }
+
+    &:checked{
+        @each $name, $color in $all-colors {
+            &.#{$name}{
+                &::before{
+                    left: $medium-toggle-o-width - ($medium-toggle-o-height * 2);
+                    background: $color
+                }
+
+                &.size-s{
+                    &::before{
+                        left: $small-toggle-o-width - ($small-toggle-o-height * 2);
+                    }
+                }
+                &.size-l{
+                    &::before{
+                        left: $large-toggle-o-width - ($large-toggle-o-height * 2);
+                    }
+                }
+            }
+        }
+    }
+}
