@@ -242,7 +242,7 @@ input[type="checkbox"].toggle{
         @each $name, $color in $all-colors {
 
             &.#{$name}{
-                border-color: $color;
+                background: $color;
             }
         }
     }
