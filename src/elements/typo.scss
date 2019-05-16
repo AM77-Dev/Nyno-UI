@@ -138,20 +138,11 @@ dl {
     list-style: none;
     margin-bottom: 15px;
     &.list{
-        border: 1px solid $dark;
-        border-radius: $border-radius;
-        padding: 0px;
-        background: $lighter;
-
-        a.square{
-            border-radius: 0;
-        }
-
-        & > li{
+        
+        &.divided > li{
 
             padding: 10px 15px;
             border-bottom: 1px solid $dark;
-
             &:last-child{
                 border-bottom: none
             }
