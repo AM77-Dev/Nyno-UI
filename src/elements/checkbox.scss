@@ -179,7 +179,7 @@ input[type="checkbox"].simple{
                 }
             }
 
-            &.type-x{
+            &.check-x{
                 &:checked, 
                 &:active, 
                 &:checked:active {
@@ -189,7 +189,7 @@ input[type="checkbox"].simple{
                 }
             }
 
-            &.type-k{
+            &.check-k{
                 &:checked, 
                 &:active, 
                 &:checked:active {
@@ -207,36 +207,70 @@ input[type="checkbox"].simple{
 
 }
 
-
-
 input[type="checkbox"].toggle{
     appearance: none;
     background-color: $light;
-    width: 44px;
-    height: 20px;
-    border-radius: 10px;
+    width: $medium-toggle-width;
+    height: $medium-toggle-height;
+    border-radius: $medium-toggle-width / 2;
     display: inline-block;
     position: relative;
     outline: none;
     cursor: pointer;
+    transition: all 250ms ease;
 
     &::before{
         display: block;
         content: "";
-        width: 16px;
-        height: 16px;
+        width: $medium-before-toggle;
+        height: $medium-before-toggle;
         background: $dark;
-        border-radius: 8px;
+        border-radius: 100%;
         position: absolute;
         top: 2px;
         left: 2px;
         transition: all 250ms ease;
     }
 
-    &:checked{
+    &.size-s{
+        width: $small-toggle-width;
+        height: $small-toggle-height;
+        border-radius: $small-toggle-width / 2;
 
         &::before{
-            left: 26px;
+            width: $small-before-toggle;
+            height: $small-before-toggle;
+        }
+    }
+
+    &.size-l{
+        width: $large-toggle-width;
+        height: $large-toggle-height;
+        border-radius: $large-toggle-width / 2;
+
+        &::before{
+            width: $large-before-toggle;
+            height: $large-before-toggle;
+        }
+    }
+
+    &:checked{
+
+        &.size-s{
+            &::before{
+                left: $small-toggle-width - ( $small-before-toggle + 2 );
+            }
+        }
+
+        &.size-l{
+            &::before{
+                left: $large-toggle-width - ( $large-before-toggle + 2 );
+            }
+        }
+
+        &::before{
+            left: $medium-toggle-width - ( $medium-before-toggle + 2 );
+            background: $light;
         }
 
         @each $name, $color in $all-colors {
