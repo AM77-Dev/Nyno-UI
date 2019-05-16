@@ -1,4 +1,4 @@
-input[type="checkbox"]{
+input[type="checkbox"].simple{
     
     appearance: none;
     background-color: transparent;
@@ -205,4 +205,38 @@ input[type="checkbox"]{
 
     }
 
+}
+
+
+
+input[type="checkbox"].toggle{
+    appearance: none;
+    background-color: $light;
+    width: 44px;
+    height: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+
+    &::before{
+        display: block;
+        content: "";
+        width: 16px;
+        height: 16px;
+        background: $dark;
+        border-radius: 8px;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        transition: all 250ms ease;
+    }
+
+    &:checked{
+
+        &::before{
+            left: 26px;
+        }
+    }
 }
