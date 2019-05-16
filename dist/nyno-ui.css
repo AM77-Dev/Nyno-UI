@@ -4856,7 +4856,7 @@ input[disabled]:hover,
   box-shadow: none !important;
 }
 
-input[type=checkbox] {
+input[type=checkbox].simple {
   appearance: none;
   background-color: transparent;
   border: 2px solid #282828;
@@ -4868,19 +4868,19 @@ input[type=checkbox] {
   outline: none;
   cursor: pointer;
 }
-input[type=checkbox].size-s {
+input[type=checkbox].simple.size-s {
   width: 15px;
   height: 15px;
 }
-input[type=checkbox].size-m {
+input[type=checkbox].simple.size-m {
   width: 20px;
   height: 20px;
 }
-input[type=checkbox].size-l {
+input[type=checkbox].simple.size-l {
   width: 30px;
   height: 30px;
 }
-input[type=checkbox]:checked::before, input[type=checkbox]:active::before, input[type=checkbox]:checked:active::before {
+input[type=checkbox].simple:checked::before, input[type=checkbox].simple:active::before, input[type=checkbox].simple:checked:active::before {
   display: block;
   position: absolute;
   top: 10%;
@@ -4892,7 +4892,7 @@ input[type=checkbox]:checked::before, input[type=checkbox]:active::before, input
   background: #282828;
   z-index: 10;
 }
-input[type=checkbox].check-x:checked::before, input[type=checkbox].check-x:checked::after, input[type=checkbox].check-x:active::before, input[type=checkbox].check-x:active::after, input[type=checkbox].check-x:checked:active::before, input[type=checkbox].check-x:checked:active::after {
+input[type=checkbox].simple.check-x:checked::before, input[type=checkbox].simple.check-x:checked::after, input[type=checkbox].simple.check-x:active::before, input[type=checkbox].simple.check-x:active::after, input[type=checkbox].simple.check-x:checked:active::before, input[type=checkbox].simple.check-x:checked:active::after {
   display: block;
   position: absolute;
   content: " ";
@@ -4904,35 +4904,35 @@ input[type=checkbox].check-x:checked::before, input[type=checkbox].check-x:check
   top: 0;
   left: 0;
 }
-input[type=checkbox].check-x:checked::before, input[type=checkbox].check-x:active::before, input[type=checkbox].check-x:checked:active::before {
+input[type=checkbox].simple.check-x:checked::before, input[type=checkbox].simple.check-x:active::before, input[type=checkbox].simple.check-x:checked:active::before {
   transform: rotate(-45deg) translateX(-2px) translateY(2px);
   transform-origin: top left;
 }
-input[type=checkbox].check-x:checked::after, input[type=checkbox].check-x:active::after, input[type=checkbox].check-x:checked:active::after {
+input[type=checkbox].simple.check-x:checked::after, input[type=checkbox].simple.check-x:active::after, input[type=checkbox].simple.check-x:checked:active::after {
   transform: rotate(45deg) translateX(-4px) translateY(-4px);
   transform-origin: bottom left;
 }
-input[type=checkbox].check-x:checked.size-s::before, input[type=checkbox].check-x:checked.size-s::after, input[type=checkbox].check-x:active.size-s::before, input[type=checkbox].check-x:active.size-s::after, input[type=checkbox].check-x:checked:active.size-s::before, input[type=checkbox].check-x:checked:active.size-s::after {
+input[type=checkbox].simple.check-x:checked.size-s::before, input[type=checkbox].simple.check-x:checked.size-s::after, input[type=checkbox].simple.check-x:active.size-s::before, input[type=checkbox].simple.check-x:active.size-s::after, input[type=checkbox].simple.check-x:checked:active.size-s::before, input[type=checkbox].simple.check-x:checked:active.size-s::after {
   height: 12px;
   width: 3px;
 }
-input[type=checkbox].check-x:checked.size-s::before, input[type=checkbox].check-x:active.size-s::before, input[type=checkbox].check-x:checked:active.size-s::before {
+input[type=checkbox].simple.check-x:checked.size-s::before, input[type=checkbox].simple.check-x:active.size-s::before, input[type=checkbox].simple.check-x:checked:active.size-s::before {
   transform: rotate(-45deg) translateX(-1.5px) translateY(2px);
 }
-input[type=checkbox].check-x:checked.size-s::after, input[type=checkbox].check-x:active.size-s::after, input[type=checkbox].check-x:checked:active.size-s::after {
+input[type=checkbox].simple.check-x:checked.size-s::after, input[type=checkbox].simple.check-x:active.size-s::after, input[type=checkbox].simple.check-x:checked:active.size-s::after {
   transform: rotate(45deg) translateX(-2px) translateY(-2.5px);
 }
-input[type=checkbox].check-x:checked.size-l::before, input[type=checkbox].check-x:checked.size-l::after, input[type=checkbox].check-x:active.size-l::before, input[type=checkbox].check-x:active.size-l::after, input[type=checkbox].check-x:checked:active.size-l::before, input[type=checkbox].check-x:checked:active.size-l::after {
+input[type=checkbox].simple.check-x:checked.size-l::before, input[type=checkbox].simple.check-x:checked.size-l::after, input[type=checkbox].simple.check-x:active.size-l::before, input[type=checkbox].simple.check-x:active.size-l::after, input[type=checkbox].simple.check-x:checked:active.size-l::before, input[type=checkbox].simple.check-x:checked:active.size-l::after {
   height: 30px;
   width: 5px;
 }
-input[type=checkbox].check-x:checked.size-l::before, input[type=checkbox].check-x:active.size-l::before, input[type=checkbox].check-x:checked:active.size-l::before {
+input[type=checkbox].simple.check-x:checked.size-l::before, input[type=checkbox].simple.check-x:active.size-l::before, input[type=checkbox].simple.check-x:checked:active.size-l::before {
   transform: rotate(-45deg) translateX(-2.5px) translateY(3.5px);
 }
-input[type=checkbox].check-x:checked.size-l::after, input[type=checkbox].check-x:active.size-l::after, input[type=checkbox].check-x:checked:active.size-l::after {
+input[type=checkbox].simple.check-x:checked.size-l::after, input[type=checkbox].simple.check-x:active.size-l::after, input[type=checkbox].simple.check-x:checked:active.size-l::after {
   transform: rotate(45deg) translateX(-5.5px) translateY(-6px);
 }
-input[type=checkbox].check-k:checked::before, input[type=checkbox].check-k:active::before, input[type=checkbox].check-k:checked:active::before {
+input[type=checkbox].simple.check-k:checked::before, input[type=checkbox].simple.check-k:active::before, input[type=checkbox].simple.check-k:checked:active::before {
   display: block;
   position: absolute;
   content: " ";
@@ -4947,216 +4947,485 @@ input[type=checkbox].check-k:checked::before, input[type=checkbox].check-k:activ
   transform: rotate(-50deg) translateX(-6px) translateY(6px);
   transform-origin: top left;
 }
-input[type=checkbox].check-k:checked.size-s::before, input[type=checkbox].check-k:active.size-s::before, input[type=checkbox].check-k:checked:active.size-s::before {
+input[type=checkbox].simple.check-k:checked.size-s::before, input[type=checkbox].simple.check-k:active.size-s::before, input[type=checkbox].simple.check-k:checked:active.size-s::before {
   transform: rotate(-50deg) translateX(-4px) translateY(4px);
 }
-input[type=checkbox].check-k:checked.size-l::before, input[type=checkbox].check-k:active.size-l::before, input[type=checkbox].check-k:checked:active.size-l::before {
+input[type=checkbox].simple.check-k:checked.size-l::before, input[type=checkbox].simple.check-k:active.size-l::before, input[type=checkbox].simple.check-k:checked:active.size-l::before {
   border: 4px solid #282828;
   transform: rotate(-50deg) translateX(-10px) translateY(11px);
 }
-input[type=checkbox].square {
+input[type=checkbox].simple.square {
   border-radius: 0;
 }
-input[type=checkbox].square:checked::before, input[type=checkbox].square:active::before, input[type=checkbox].square:checked:active::before {
+input[type=checkbox].simple.square:checked::before, input[type=checkbox].simple.square:active::before, input[type=checkbox].simple.square:checked:active::before {
   border-radius: 0;
 }
-input[type=checkbox].square.type-x:checked::before, input[type=checkbox].square.type-x:checked::after, input[type=checkbox].square.type-x:active::before, input[type=checkbox].square.type-x:active::after, input[type=checkbox].square.type-x:checked:active::before, input[type=checkbox].square.type-x:checked:active::after {
+input[type=checkbox].simple.square.type-x:checked::before, input[type=checkbox].simple.square.type-x:checked::after, input[type=checkbox].simple.square.type-x:active::before, input[type=checkbox].simple.square.type-x:active::after, input[type=checkbox].simple.square.type-x:checked:active::before, input[type=checkbox].simple.square.type-x:checked:active::after {
   border-radius: 3px;
 }
-input[type=checkbox].white {
+input[type=checkbox].simple.white {
   border-color: #ffffff;
 }
-input[type=checkbox].white:checked::before, input[type=checkbox].white:active::before, input[type=checkbox].white:checked:active::before {
+input[type=checkbox].simple.white:checked::before, input[type=checkbox].simple.white:active::before, input[type=checkbox].simple.white:checked:active::before {
   background: #ffffff;
 }
-input[type=checkbox].white.type-x:checked::before, input[type=checkbox].white.type-x:checked::after, input[type=checkbox].white.type-x:active::before, input[type=checkbox].white.type-x:active::after, input[type=checkbox].white.type-x:checked:active::before, input[type=checkbox].white.type-x:checked:active::after {
+input[type=checkbox].simple.white.check-x:checked::before, input[type=checkbox].simple.white.check-x:checked::after, input[type=checkbox].simple.white.check-x:active::before, input[type=checkbox].simple.white.check-x:active::after, input[type=checkbox].simple.white.check-x:checked:active::before, input[type=checkbox].simple.white.check-x:checked:active::after {
   background: #ffffff;
 }
-input[type=checkbox].white.type-k:checked::before, input[type=checkbox].white.type-k:active::before, input[type=checkbox].white.type-k:checked:active::before {
+input[type=checkbox].simple.white.check-k:checked::before, input[type=checkbox].simple.white.check-k:active::before, input[type=checkbox].simple.white.check-k:checked:active::before {
   background: transparent;
   border-color: #ffffff;
   border-top: none;
   border-right: none;
 }
-input[type=checkbox].black {
+input[type=checkbox].simple.black {
   border-color: #000000;
 }
-input[type=checkbox].black:checked::before, input[type=checkbox].black:active::before, input[type=checkbox].black:checked:active::before {
+input[type=checkbox].simple.black:checked::before, input[type=checkbox].simple.black:active::before, input[type=checkbox].simple.black:checked:active::before {
   background: #000000;
 }
-input[type=checkbox].black.type-x:checked::before, input[type=checkbox].black.type-x:checked::after, input[type=checkbox].black.type-x:active::before, input[type=checkbox].black.type-x:active::after, input[type=checkbox].black.type-x:checked:active::before, input[type=checkbox].black.type-x:checked:active::after {
+input[type=checkbox].simple.black.check-x:checked::before, input[type=checkbox].simple.black.check-x:checked::after, input[type=checkbox].simple.black.check-x:active::before, input[type=checkbox].simple.black.check-x:active::after, input[type=checkbox].simple.black.check-x:checked:active::before, input[type=checkbox].simple.black.check-x:checked:active::after {
   background: #000000;
 }
-input[type=checkbox].black.type-k:checked::before, input[type=checkbox].black.type-k:active::before, input[type=checkbox].black.type-k:checked:active::before {
+input[type=checkbox].simple.black.check-k:checked::before, input[type=checkbox].simple.black.check-k:active::before, input[type=checkbox].simple.black.check-k:checked:active::before {
   background: transparent;
   border-color: #000000;
   border-top: none;
   border-right: none;
 }
-input[type=checkbox].dark {
+input[type=checkbox].simple.dark {
   border-color: #282828;
 }
-input[type=checkbox].dark:checked::before, input[type=checkbox].dark:active::before, input[type=checkbox].dark:checked:active::before {
+input[type=checkbox].simple.dark:checked::before, input[type=checkbox].simple.dark:active::before, input[type=checkbox].simple.dark:checked:active::before {
   background: #282828;
 }
-input[type=checkbox].dark.type-x:checked::before, input[type=checkbox].dark.type-x:checked::after, input[type=checkbox].dark.type-x:active::before, input[type=checkbox].dark.type-x:active::after, input[type=checkbox].dark.type-x:checked:active::before, input[type=checkbox].dark.type-x:checked:active::after {
+input[type=checkbox].simple.dark.check-x:checked::before, input[type=checkbox].simple.dark.check-x:checked::after, input[type=checkbox].simple.dark.check-x:active::before, input[type=checkbox].simple.dark.check-x:active::after, input[type=checkbox].simple.dark.check-x:checked:active::before, input[type=checkbox].simple.dark.check-x:checked:active::after {
   background: #282828;
 }
-input[type=checkbox].dark.type-k:checked::before, input[type=checkbox].dark.type-k:active::before, input[type=checkbox].dark.type-k:checked:active::before {
+input[type=checkbox].simple.dark.check-k:checked::before, input[type=checkbox].simple.dark.check-k:active::before, input[type=checkbox].simple.dark.check-k:checked:active::before {
   background: transparent;
   border-color: #282828;
   border-top: none;
   border-right: none;
 }
-input[type=checkbox].light {
+input[type=checkbox].simple.light {
   border-color: #e7e3e7;
 }
-input[type=checkbox].light:checked::before, input[type=checkbox].light:active::before, input[type=checkbox].light:checked:active::before {
+input[type=checkbox].simple.light:checked::before, input[type=checkbox].simple.light:active::before, input[type=checkbox].simple.light:checked:active::before {
   background: #e7e3e7;
 }
-input[type=checkbox].light.type-x:checked::before, input[type=checkbox].light.type-x:checked::after, input[type=checkbox].light.type-x:active::before, input[type=checkbox].light.type-x:active::after, input[type=checkbox].light.type-x:checked:active::before, input[type=checkbox].light.type-x:checked:active::after {
+input[type=checkbox].simple.light.check-x:checked::before, input[type=checkbox].simple.light.check-x:checked::after, input[type=checkbox].simple.light.check-x:active::before, input[type=checkbox].simple.light.check-x:active::after, input[type=checkbox].simple.light.check-x:checked:active::before, input[type=checkbox].simple.light.check-x:checked:active::after {
   background: #e7e3e7;
 }
-input[type=checkbox].light.type-k:checked::before, input[type=checkbox].light.type-k:active::before, input[type=checkbox].light.type-k:checked:active::before {
+input[type=checkbox].simple.light.check-k:checked::before, input[type=checkbox].simple.light.check-k:active::before, input[type=checkbox].simple.light.check-k:checked:active::before {
   background: transparent;
   border-color: #e7e3e7;
   border-top: none;
   border-right: none;
 }
-input[type=checkbox].green {
+input[type=checkbox].simple.green {
   border-color: #119955;
 }
-input[type=checkbox].green:checked::before, input[type=checkbox].green:active::before, input[type=checkbox].green:checked:active::before {
+input[type=checkbox].simple.green:checked::before, input[type=checkbox].simple.green:active::before, input[type=checkbox].simple.green:checked:active::before {
   background: #119955;
 }
-input[type=checkbox].green.type-x:checked::before, input[type=checkbox].green.type-x:checked::after, input[type=checkbox].green.type-x:active::before, input[type=checkbox].green.type-x:active::after, input[type=checkbox].green.type-x:checked:active::before, input[type=checkbox].green.type-x:checked:active::after {
+input[type=checkbox].simple.green.check-x:checked::before, input[type=checkbox].simple.green.check-x:checked::after, input[type=checkbox].simple.green.check-x:active::before, input[type=checkbox].simple.green.check-x:active::after, input[type=checkbox].simple.green.check-x:checked:active::before, input[type=checkbox].simple.green.check-x:checked:active::after {
   background: #119955;
 }
-input[type=checkbox].green.type-k:checked::before, input[type=checkbox].green.type-k:active::before, input[type=checkbox].green.type-k:checked:active::before {
+input[type=checkbox].simple.green.check-k:checked::before, input[type=checkbox].simple.green.check-k:active::before, input[type=checkbox].simple.green.check-k:checked:active::before {
   background: transparent;
   border-color: #119955;
   border-top: none;
   border-right: none;
 }
-input[type=checkbox].blue {
+input[type=checkbox].simple.blue {
   border-color: #1034A6;
 }
-input[type=checkbox].blue:checked::before, input[type=checkbox].blue:active::before, input[type=checkbox].blue:checked:active::before {
+input[type=checkbox].simple.blue:checked::before, input[type=checkbox].simple.blue:active::before, input[type=checkbox].simple.blue:checked:active::before {
   background: #1034A6;
 }
-input[type=checkbox].blue.type-x:checked::before, input[type=checkbox].blue.type-x:checked::after, input[type=checkbox].blue.type-x:active::before, input[type=checkbox].blue.type-x:active::after, input[type=checkbox].blue.type-x:checked:active::before, input[type=checkbox].blue.type-x:checked:active::after {
+input[type=checkbox].simple.blue.check-x:checked::before, input[type=checkbox].simple.blue.check-x:checked::after, input[type=checkbox].simple.blue.check-x:active::before, input[type=checkbox].simple.blue.check-x:active::after, input[type=checkbox].simple.blue.check-x:checked:active::before, input[type=checkbox].simple.blue.check-x:checked:active::after {
   background: #1034A6;
 }
-input[type=checkbox].blue.type-k:checked::before, input[type=checkbox].blue.type-k:active::before, input[type=checkbox].blue.type-k:checked:active::before {
+input[type=checkbox].simple.blue.check-k:checked::before, input[type=checkbox].simple.blue.check-k:active::before, input[type=checkbox].simple.blue.check-k:checked:active::before {
   background: transparent;
   border-color: #1034A6;
   border-top: none;
   border-right: none;
 }
-input[type=checkbox].purple {
+input[type=checkbox].simple.purple {
   border-color: #780eb1;
 }
-input[type=checkbox].purple:checked::before, input[type=checkbox].purple:active::before, input[type=checkbox].purple:checked:active::before {
+input[type=checkbox].simple.purple:checked::before, input[type=checkbox].simple.purple:active::before, input[type=checkbox].simple.purple:checked:active::before {
   background: #780eb1;
 }
-input[type=checkbox].purple.type-x:checked::before, input[type=checkbox].purple.type-x:checked::after, input[type=checkbox].purple.type-x:active::before, input[type=checkbox].purple.type-x:active::after, input[type=checkbox].purple.type-x:checked:active::before, input[type=checkbox].purple.type-x:checked:active::after {
+input[type=checkbox].simple.purple.check-x:checked::before, input[type=checkbox].simple.purple.check-x:checked::after, input[type=checkbox].simple.purple.check-x:active::before, input[type=checkbox].simple.purple.check-x:active::after, input[type=checkbox].simple.purple.check-x:checked:active::before, input[type=checkbox].simple.purple.check-x:checked:active::after {
   background: #780eb1;
 }
-input[type=checkbox].purple.type-k:checked::before, input[type=checkbox].purple.type-k:active::before, input[type=checkbox].purple.type-k:checked:active::before {
+input[type=checkbox].simple.purple.check-k:checked::before, input[type=checkbox].simple.purple.check-k:active::before, input[type=checkbox].simple.purple.check-k:checked:active::before {
   background: transparent;
   border-color: #780eb1;
   border-top: none;
   border-right: none;
 }
-input[type=checkbox].red {
+input[type=checkbox].simple.red {
   border-color: #cd0033;
 }
-input[type=checkbox].red:checked::before, input[type=checkbox].red:active::before, input[type=checkbox].red:checked:active::before {
+input[type=checkbox].simple.red:checked::before, input[type=checkbox].simple.red:active::before, input[type=checkbox].simple.red:checked:active::before {
   background: #cd0033;
 }
-input[type=checkbox].red.type-x:checked::before, input[type=checkbox].red.type-x:checked::after, input[type=checkbox].red.type-x:active::before, input[type=checkbox].red.type-x:active::after, input[type=checkbox].red.type-x:checked:active::before, input[type=checkbox].red.type-x:checked:active::after {
+input[type=checkbox].simple.red.check-x:checked::before, input[type=checkbox].simple.red.check-x:checked::after, input[type=checkbox].simple.red.check-x:active::before, input[type=checkbox].simple.red.check-x:active::after, input[type=checkbox].simple.red.check-x:checked:active::before, input[type=checkbox].simple.red.check-x:checked:active::after {
   background: #cd0033;
 }
-input[type=checkbox].red.type-k:checked::before, input[type=checkbox].red.type-k:active::before, input[type=checkbox].red.type-k:checked:active::before {
+input[type=checkbox].simple.red.check-k:checked::before, input[type=checkbox].simple.red.check-k:active::before, input[type=checkbox].simple.red.check-k:checked:active::before {
   background: transparent;
   border-color: #cd0033;
   border-top: none;
   border-right: none;
 }
-input[type=checkbox].orange {
+input[type=checkbox].simple.orange {
   border-color: #F55302;
 }
-input[type=checkbox].orange:checked::before, input[type=checkbox].orange:active::before, input[type=checkbox].orange:checked:active::before {
+input[type=checkbox].simple.orange:checked::before, input[type=checkbox].simple.orange:active::before, input[type=checkbox].simple.orange:checked:active::before {
   background: #F55302;
 }
-input[type=checkbox].orange.type-x:checked::before, input[type=checkbox].orange.type-x:checked::after, input[type=checkbox].orange.type-x:active::before, input[type=checkbox].orange.type-x:active::after, input[type=checkbox].orange.type-x:checked:active::before, input[type=checkbox].orange.type-x:checked:active::after {
+input[type=checkbox].simple.orange.check-x:checked::before, input[type=checkbox].simple.orange.check-x:checked::after, input[type=checkbox].simple.orange.check-x:active::before, input[type=checkbox].simple.orange.check-x:active::after, input[type=checkbox].simple.orange.check-x:checked:active::before, input[type=checkbox].simple.orange.check-x:checked:active::after {
   background: #F55302;
 }
-input[type=checkbox].orange.type-k:checked::before, input[type=checkbox].orange.type-k:active::before, input[type=checkbox].orange.type-k:checked:active::before {
+input[type=checkbox].simple.orange.check-k:checked::before, input[type=checkbox].simple.orange.check-k:active::before, input[type=checkbox].simple.orange.check-k:checked:active::before {
   background: transparent;
   border-color: #F55302;
   border-top: none;
   border-right: none;
 }
-input[type=checkbox].yellow {
+input[type=checkbox].simple.yellow {
   border-color: #F7BE00;
 }
-input[type=checkbox].yellow:checked::before, input[type=checkbox].yellow:active::before, input[type=checkbox].yellow:checked:active::before {
+input[type=checkbox].simple.yellow:checked::before, input[type=checkbox].simple.yellow:active::before, input[type=checkbox].simple.yellow:checked:active::before {
   background: #F7BE00;
 }
-input[type=checkbox].yellow.type-x:checked::before, input[type=checkbox].yellow.type-x:checked::after, input[type=checkbox].yellow.type-x:active::before, input[type=checkbox].yellow.type-x:active::after, input[type=checkbox].yellow.type-x:checked:active::before, input[type=checkbox].yellow.type-x:checked:active::after {
+input[type=checkbox].simple.yellow.check-x:checked::before, input[type=checkbox].simple.yellow.check-x:checked::after, input[type=checkbox].simple.yellow.check-x:active::before, input[type=checkbox].simple.yellow.check-x:active::after, input[type=checkbox].simple.yellow.check-x:checked:active::before, input[type=checkbox].simple.yellow.check-x:checked:active::after {
   background: #F7BE00;
 }
-input[type=checkbox].yellow.type-k:checked::before, input[type=checkbox].yellow.type-k:active::before, input[type=checkbox].yellow.type-k:checked:active::before {
+input[type=checkbox].simple.yellow.check-k:checked::before, input[type=checkbox].simple.yellow.check-k:active::before, input[type=checkbox].simple.yellow.check-k:checked:active::before {
   background: transparent;
   border-color: #F7BE00;
   border-top: none;
   border-right: none;
 }
-input[type=checkbox].brown {
+input[type=checkbox].simple.brown {
   border-color: #8b4136;
 }
-input[type=checkbox].brown:checked::before, input[type=checkbox].brown:active::before, input[type=checkbox].brown:checked:active::before {
+input[type=checkbox].simple.brown:checked::before, input[type=checkbox].simple.brown:active::before, input[type=checkbox].simple.brown:checked:active::before {
   background: #8b4136;
 }
-input[type=checkbox].brown.type-x:checked::before, input[type=checkbox].brown.type-x:checked::after, input[type=checkbox].brown.type-x:active::before, input[type=checkbox].brown.type-x:active::after, input[type=checkbox].brown.type-x:checked:active::before, input[type=checkbox].brown.type-x:checked:active::after {
+input[type=checkbox].simple.brown.check-x:checked::before, input[type=checkbox].simple.brown.check-x:checked::after, input[type=checkbox].simple.brown.check-x:active::before, input[type=checkbox].simple.brown.check-x:active::after, input[type=checkbox].simple.brown.check-x:checked:active::before, input[type=checkbox].simple.brown.check-x:checked:active::after {
   background: #8b4136;
 }
-input[type=checkbox].brown.type-k:checked::before, input[type=checkbox].brown.type-k:active::before, input[type=checkbox].brown.type-k:checked:active::before {
+input[type=checkbox].simple.brown.check-k:checked::before, input[type=checkbox].simple.brown.check-k:active::before, input[type=checkbox].simple.brown.check-k:checked:active::before {
   background: transparent;
   border-color: #8b4136;
   border-top: none;
   border-right: none;
 }
-input[type=checkbox].teal {
+input[type=checkbox].simple.teal {
   border-color: #00796B;
 }
-input[type=checkbox].teal:checked::before, input[type=checkbox].teal:active::before, input[type=checkbox].teal:checked:active::before {
+input[type=checkbox].simple.teal:checked::before, input[type=checkbox].simple.teal:active::before, input[type=checkbox].simple.teal:checked:active::before {
   background: #00796B;
 }
-input[type=checkbox].teal.type-x:checked::before, input[type=checkbox].teal.type-x:checked::after, input[type=checkbox].teal.type-x:active::before, input[type=checkbox].teal.type-x:active::after, input[type=checkbox].teal.type-x:checked:active::before, input[type=checkbox].teal.type-x:checked:active::after {
+input[type=checkbox].simple.teal.check-x:checked::before, input[type=checkbox].simple.teal.check-x:checked::after, input[type=checkbox].simple.teal.check-x:active::before, input[type=checkbox].simple.teal.check-x:active::after, input[type=checkbox].simple.teal.check-x:checked:active::before, input[type=checkbox].simple.teal.check-x:checked:active::after {
   background: #00796B;
 }
-input[type=checkbox].teal.type-k:checked::before, input[type=checkbox].teal.type-k:active::before, input[type=checkbox].teal.type-k:checked:active::before {
+input[type=checkbox].simple.teal.check-k:checked::before, input[type=checkbox].simple.teal.check-k:active::before, input[type=checkbox].simple.teal.check-k:checked:active::before {
   background: transparent;
   border-color: #00796B;
   border-top: none;
   border-right: none;
 }
-input[type=checkbox].pink {
+input[type=checkbox].simple.pink {
   border-color: #B20056;
 }
-input[type=checkbox].pink:checked::before, input[type=checkbox].pink:active::before, input[type=checkbox].pink:checked:active::before {
+input[type=checkbox].simple.pink:checked::before, input[type=checkbox].simple.pink:active::before, input[type=checkbox].simple.pink:checked:active::before {
   background: #B20056;
 }
-input[type=checkbox].pink.type-x:checked::before, input[type=checkbox].pink.type-x:checked::after, input[type=checkbox].pink.type-x:active::before, input[type=checkbox].pink.type-x:active::after, input[type=checkbox].pink.type-x:checked:active::before, input[type=checkbox].pink.type-x:checked:active::after {
+input[type=checkbox].simple.pink.check-x:checked::before, input[type=checkbox].simple.pink.check-x:checked::after, input[type=checkbox].simple.pink.check-x:active::before, input[type=checkbox].simple.pink.check-x:active::after, input[type=checkbox].simple.pink.check-x:checked:active::before, input[type=checkbox].simple.pink.check-x:checked:active::after {
   background: #B20056;
 }
-input[type=checkbox].pink.type-k:checked::before, input[type=checkbox].pink.type-k:active::before, input[type=checkbox].pink.type-k:checked:active::before {
+input[type=checkbox].simple.pink.check-k:checked::before, input[type=checkbox].simple.pink.check-k:active::before, input[type=checkbox].simple.pink.check-k:checked:active::before {
   background: transparent;
   border-color: #B20056;
   border-top: none;
   border-right: none;
+}
+
+input[type=checkbox].toggle {
+  appearance: none;
+  background-color: #e7e3e7;
+  width: 67.5px;
+  height: 30px;
+  border-radius: 33.75px;
+  display: inline-block;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+input[type=checkbox].toggle::before {
+  display: block;
+  content: "";
+  width: 26px;
+  height: 26px;
+  background: #282828;
+  border-radius: 100%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: all 250ms ease;
+}
+input[type=checkbox].toggle.size-s {
+  width: 45px;
+  height: 20px;
+  border-radius: 22.5px;
+}
+input[type=checkbox].toggle.size-s::before {
+  width: 16px;
+  height: 16px;
+}
+input[type=checkbox].toggle.size-l {
+  width: 99px;
+  height: 44px;
+  border-radius: 49.5px;
+}
+input[type=checkbox].toggle.size-l::before {
+  width: 40px;
+  height: 40px;
+}
+input[type=checkbox].toggle:checked.size-s::before {
+  left: 27px;
+}
+input[type=checkbox].toggle:checked.size-l::before {
+  left: 57px;
+}
+input[type=checkbox].toggle:checked::before {
+  left: 39.5px;
+  background: #e7e3e7;
+}
+input[type=checkbox].toggle:checked.white {
+  background: #ffffff;
+}
+input[type=checkbox].toggle:checked.black {
+  background: #000000;
+}
+input[type=checkbox].toggle:checked.dark {
+  background: #282828;
+}
+input[type=checkbox].toggle:checked.light {
+  background: #e7e3e7;
+}
+input[type=checkbox].toggle:checked.green {
+  background: #119955;
+}
+input[type=checkbox].toggle:checked.blue {
+  background: #1034A6;
+}
+input[type=checkbox].toggle:checked.purple {
+  background: #780eb1;
+}
+input[type=checkbox].toggle:checked.red {
+  background: #cd0033;
+}
+input[type=checkbox].toggle:checked.orange {
+  background: #F55302;
+}
+input[type=checkbox].toggle:checked.yellow {
+  background: #F7BE00;
+}
+input[type=checkbox].toggle:checked.brown {
+  background: #8b4136;
+}
+input[type=checkbox].toggle:checked.teal {
+  background: #00796B;
+}
+input[type=checkbox].toggle:checked.pink {
+  background: #B20056;
+}
+
+input[type=checkbox].toggle-o {
+  appearance: none;
+  background-color: #e7e3e7;
+  width: 56px;
+  height: 8px;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+input[type=checkbox].toggle-o::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: #282828;
+  border-radius: 12px;
+  position: absolute;
+  top: -8px;
+  left: 0px;
+  transition: all 250ms ease;
+}
+input[type=checkbox].toggle-o.size-s {
+  width: 40px;
+  height: 5px;
+  border-radius: 2.5px;
+}
+input[type=checkbox].toggle-o.size-s::before {
+  width: 15px;
+  height: 15px;
+  border-radius: 7.5px;
+  top: -5px;
+}
+input[type=checkbox].toggle-o.size-l {
+  width: 96px;
+  height: 16px;
+  border-radius: 8px;
+}
+input[type=checkbox].toggle-o.size-l::before {
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  top: -14.6666666667px;
+}
+input[type=checkbox].toggle-o:checked.white::before {
+  left: 40px;
+  background: #ffffff;
+}
+input[type=checkbox].toggle-o:checked.white.size-s::before {
+  left: 30px;
+}
+input[type=checkbox].toggle-o:checked.white.size-l::before {
+  left: 64px;
+}
+input[type=checkbox].toggle-o:checked.black::before {
+  left: 40px;
+  background: #000000;
+}
+input[type=checkbox].toggle-o:checked.black.size-s::before {
+  left: 30px;
+}
+input[type=checkbox].toggle-o:checked.black.size-l::before {
+  left: 64px;
+}
+input[type=checkbox].toggle-o:checked.dark::before {
+  left: 40px;
+  background: #282828;
+}
+input[type=checkbox].toggle-o:checked.dark.size-s::before {
+  left: 30px;
+}
+input[type=checkbox].toggle-o:checked.dark.size-l::before {
+  left: 64px;
+}
+input[type=checkbox].toggle-o:checked.light::before {
+  left: 40px;
+  background: #e7e3e7;
+}
+input[type=checkbox].toggle-o:checked.light.size-s::before {
+  left: 30px;
+}
+input[type=checkbox].toggle-o:checked.light.size-l::before {
+  left: 64px;
+}
+input[type=checkbox].toggle-o:checked.green::before {
+  left: 40px;
+  background: #119955;
+}
+input[type=checkbox].toggle-o:checked.green.size-s::before {
+  left: 30px;
+}
+input[type=checkbox].toggle-o:checked.green.size-l::before {
+  left: 64px;
+}
+input[type=checkbox].toggle-o:checked.blue::before {
+  left: 40px;
+  background: #1034A6;
+}
+input[type=checkbox].toggle-o:checked.blue.size-s::before {
+  left: 30px;
+}
+input[type=checkbox].toggle-o:checked.blue.size-l::before {
+  left: 64px;
+}
+input[type=checkbox].toggle-o:checked.purple::before {
+  left: 40px;
+  background: #780eb1;
+}
+input[type=checkbox].toggle-o:checked.purple.size-s::before {
+  left: 30px;
+}
+input[type=checkbox].toggle-o:checked.purple.size-l::before {
+  left: 64px;
+}
+input[type=checkbox].toggle-o:checked.red::before {
+  left: 40px;
+  background: #cd0033;
+}
+input[type=checkbox].toggle-o:checked.red.size-s::before {
+  left: 30px;
+}
+input[type=checkbox].toggle-o:checked.red.size-l::before {
+  left: 64px;
+}
+input[type=checkbox].toggle-o:checked.orange::before {
+  left: 40px;
+  background: #F55302;
+}
+input[type=checkbox].toggle-o:checked.orange.size-s::before {
+  left: 30px;
+}
+input[type=checkbox].toggle-o:checked.orange.size-l::before {
+  left: 64px;
+}
+input[type=checkbox].toggle-o:checked.yellow::before {
+  left: 40px;
+  background: #F7BE00;
+}
+input[type=checkbox].toggle-o:checked.yellow.size-s::before {
+  left: 30px;
+}
+input[type=checkbox].toggle-o:checked.yellow.size-l::before {
+  left: 64px;
+}
+input[type=checkbox].toggle-o:checked.brown::before {
+  left: 40px;
+  background: #8b4136;
+}
+input[type=checkbox].toggle-o:checked.brown.size-s::before {
+  left: 30px;
+}
+input[type=checkbox].toggle-o:checked.brown.size-l::before {
+  left: 64px;
+}
+input[type=checkbox].toggle-o:checked.teal::before {
+  left: 40px;
+  background: #00796B;
+}
+input[type=checkbox].toggle-o:checked.teal.size-s::before {
+  left: 30px;
+}
+input[type=checkbox].toggle-o:checked.teal.size-l::before {
+  left: 64px;
+}
+input[type=checkbox].toggle-o:checked.pink::before {
+  left: 40px;
+  background: #B20056;
+}
+input[type=checkbox].toggle-o:checked.pink.size-s::before {
+  left: 30px;
+}
+input[type=checkbox].toggle-o:checked.pink.size-l::before {
+  left: 64px;
 }
 
 input[type=radio] {
@@ -6303,119 +6572,132 @@ input[type=range]:disabled:hover::-webkit-slider-thumb {
 .message.white {
   background: #f6f6f6;
   border: 1px solid #f6f6f6;
+  color: #f6f6f6;
 }
 .message.white-o {
   color: #f6f6f6;
-  background: #f6f6f6;
   border: 1px solid #f6f6f6;
+  background: transparent;
 }
 .message.black {
   background: #f6f6f6;
   border: 1px solid #f6f6f6;
+  color: #f6f6f6;
 }
 .message.black-o {
   color: #f6f6f6;
-  background: #f6f6f6;
   border: 1px solid #f6f6f6;
+  background: transparent;
 }
 .message.dark {
   background: #f6f6f6;
   border: 1px solid #f6f6f6;
+  color: #f6f6f6;
 }
 .message.dark-o {
   color: #f6f6f6;
-  background: #f6f6f6;
   border: 1px solid #f6f6f6;
+  background: transparent;
 }
 .message.light {
   background: #f6f6f6;
   border: 1px solid #f6f6f6;
+  color: #f6f6f6;
 }
 .message.light-o {
   color: #f6f6f6;
-  background: #f6f6f6;
   border: 1px solid #f6f6f6;
+  background: transparent;
 }
 .message.green {
   background: #52BF90;
   border: 1px solid #254d41;
+  color: #254d41;
 }
 .message.green-o {
-  color: #254d41;
-  background: #52BF90;
-  border: 1px solid #254d41;
+  color: #119955;
+  border: 1px solid #119955;
+  background: transparent;
 }
 .message.blue {
   background: #738ee9;
   border: 1px solid #162e7a;
+  color: #162e7a;
 }
 .message.blue-o {
-  color: #162e7a;
-  background: #738ee9;
-  border: 1px solid #162e7a;
+  color: #1034A6;
+  border: 1px solid #1034A6;
+  background: transparent;
 }
 .message.purple {
   background: #A787C4;
   border: 1px solid #420061;
+  color: #420061;
 }
 .message.purple-o {
-  color: #420061;
-  background: #A787C4;
-  border: 1px solid #420061;
+  color: #780eb1;
+  border: 1px solid #780eb1;
+  background: transparent;
 }
 .message.red {
   background: #FF8181;
   border: 1px solid #9A0206;
+  color: #9A0206;
 }
 .message.red-o {
-  color: #9A0206;
-  background: #FF8181;
-  border: 1px solid #9A0206;
+  color: #cd0033;
+  border: 1px solid #cd0033;
+  background: transparent;
 }
 .message.orange {
   background: #F7C293;
   border: 1px solid #D23F06;
+  color: #D23F06;
 }
 .message.orange-o {
-  color: #D23F06;
-  background: #F7C293;
-  border: 1px solid #D23F06;
+  color: #F55302;
+  border: 1px solid #F55302;
+  background: transparent;
 }
 .message.yellow {
   background: #F5F778;
   border: 1px solid #c0a311;
+  color: #c0a311;
 }
 .message.yellow-o {
-  color: #c0a311;
-  background: #F5F778;
-  border: 1px solid #c0a311;
+  color: #F7BE00;
+  border: 1px solid #F7BE00;
+  background: transparent;
 }
 .message.brown {
   background: #D2A56D;
   border: 1px solid #562B00;
+  color: #562B00;
 }
 .message.brown-o {
-  color: #562B00;
-  background: #D2A56D;
-  border: 1px solid #562B00;
+  color: #8b4136;
+  border: 1px solid #8b4136;
+  background: transparent;
 }
 .message.teal {
   background: #B2D8D8;
   border: 1px solid #004A4A;
+  color: #004A4A;
 }
 .message.teal-o {
-  color: #004A4A;
-  background: #B2D8D8;
-  border: 1px solid #004A4A;
+  color: #00796B;
+  border: 1px solid #00796B;
+  background: transparent;
 }
 .message.pink {
   background: #F391BD;
   border: 1px solid #7A013B;
+  color: #7A013B;
 }
 .message.pink-o {
-  color: #7A013B;
-  background: #F391BD;
-  border: 1px solid #7A013B;
+  color: #B20056;
+  border: 1px solid #B20056;
+  background: transparent;
 }
 
 /*# sourceMappingURL=nyno-ui.css.map */
