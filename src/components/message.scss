@@ -30,5 +30,12 @@
             border: 1px solid get-color("dark", $name);
             color: get-color("dark", $name);
         }
+
+        &.#{$name}-o{
+            color: get-color("", $name);
+            border: 1px solid get-color("", $name);
+            background: transparent;
+            
+        }
     }
 }
