@@ -28,12 +28,7 @@
         &.#{$name}{
             background: get-color("lighter", $name);
             border: 1px solid get-color("dark", $name);
-        }
-
-        &.#{$name}-o{
             color: get-color("dark", $name);
-            background: get-color("lighter", $name);
-            border: 1px solid get-color("dark", $name);
         }
     }
 }
