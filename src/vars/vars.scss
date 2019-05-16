@@ -44,6 +44,20 @@ $medium-before-toggle:  $medium-toggle-height - 4px;
 $large-before-toggle:  $large-toggle-height - 4px;
 
 
+// checkbox toggle-o sizes
+$small-toggle-o-height: 5px;
+$small-toggle-o-width: $small-toggle-o-height * 8;
+
+$medium-toggle-o-height: 8px;
+$medium-toggle-o-width: $medium-toggle-o-height * 7;
+
+$large-toggle-o-height: 16px;
+$large-toggle-o-width: $large-toggle-o-height * 6;
+
+$small-before-toggle-o:  $small-toggle-o-height * 3;
+$medium-before-toggle-o:  $medium-toggle-o-height * 3;
+$large-before-toggle-o:  $large-toggle-o-height * 2.75;
+
 
 // border radius
 $border-radius: 3px !default;
