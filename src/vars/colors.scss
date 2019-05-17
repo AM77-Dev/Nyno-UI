@@ -1,76 +1,77 @@
-//*** color vars ***//
-
-/*
-    colors to modify: red green
-*/
+// color vars 
+// Most of colors used from Material Palette in https://material.io/tools/color/
 
 $color-white: #ffffff !default;
 $color-black: #000000 !default;
-
-$dark: #282828 !default;
-$darker: #0E1111 !default;
-$light-dark: #626262 !default;
-
-$light: #e7e3e7 !default;
-$lighter: #f6f6f6 !default;
-$dark-light: #D9D8DA !default;
-
 
 $disabled: #c1c1c1 !default;
 $dark-disabled: #474747 !default;
 $light-disabled: #d6cfcf !default;
 
+$lighter-dark: #E0E0E0  !default;
+$light-dark:  #9E9E9E  !default;
+$dark: #333333 !default;
+$dark-dark: #252525 !default;
+$darker-dark: #191919  !default;
 
-$lighter-green: #52BF90 !default;
-$light-green: #4caf84 !default;
-$green: #119955 !default;
-$dark-green: #254d41 !default;
-$darker-green: #1b3a2f !default;
 
-$lighter-blue: #738ee9 !default;
-$light-blue: #244ac7 !default;
-$blue: #1034A6 !default;
-$dark-blue: #162e7a !default;
-$darker-blue: #0b173f !default;
+$lighter-light: #FAFAFA !default;
+$light-light: #F5F5F5  !default;
+$light: #EEEEEE !default;
+$dark-light: #BDBDBD  !default;
+$darker-light: #9E9E9E  !default;
 
-$lighter-purple: #A787C4 !default;
-$light-purple: #7D49A4 !default;
-$purple: #780eb1 !default;
-$dark-purple: #420061 !default;
-$darker-purple: #330449 !default; 
 
-$lighter-red: #FF8181 !default;
-$light-red: #FD2B2A !default;
-$red: #cd0033 !default;
-$dark-red: #9A0206 !default;
-$darker-red: #5C0102 !default;
+$lighter-green: #A5D6A7 !default;
+$light-green: #66BB6A  !default;
+$green: #00C853  !default;
+$dark-green: #388E3C !default;
+$darker-green: #1B5E20  !default;
 
-$lighter-orange: #F7C293 !default;
-$light-orange: #F7AA40 !default;
-$orange: #F55302 !default;
-$dark-orange: #D23F06 !default;
-$darker-orange: #a33803 !default;
+$lighter-blue: #9FA8DA   !default;
+$light-blue: #5C6BC0  !default;
+$blue: #304FFE  !default;
+$dark-blue: #303F9F !default;
+$darker-blue: #1A237E   !default;
 
-$lighter-yellow: #F5F778 !default;
-$light-yellow: #F4F72A !default;
-$yellow: #F7BE00 !default;
-$dark-yellow: #c0a311 !default;
-$darker-yellow: #6d5324 !default; 
+$lighter-purple: #CE93D8  !default;
+$light-purple: #AB47BC  !default;
+$purple: #AA00FF  !default;
+$dark-purple: #7B1FA2  !default;
+$darker-purple: #4A148C !default; 
 
-$lighter-brown: #D2A56D !default;
-$light-brown: #96613D !default;
-$brown: #8b4136 !default;
-$dark-brown: #562B00 !default;
-$darker-brown: #3C1B00 !default; 
+$lighter-red: #EF9A9A !default;
+$light-red: #EF5350 !default;
+$red: #D50000 !default;
+$dark-red: #D32F2F !default;
+$darker-red: #B71C1C  !default;
 
-$lighter-teal: #B2D8D8 !default;
-$light-teal: #008080 !default;
-$teal: #00796B !default;
-$dark-teal: #004A4A !default;
-$darker-teal: #00262F !default;
+$lighter-orange: #FFAB91  !default;
+$light-orange: #FF7043  !default;
+$orange: #FF3D00  !default;
+$dark-orange: #E64A19  !default;
+$darker-orange: #BF360C !default;
 
-$lighter-pink: #F391BD !default;
-$light-pink: #EA3788 !default;
-$pink: #B20056 !default;
-$dark-pink: #7A013B !default;
-$darker-pink: #3E001E !default;
+$lighter-yellow: #FFF59D  !default;
+$light-yellow: #FFEE58  !default;
+$yellow: #FFD600  !default;
+$dark-yellow: #FBC02D  !default;
+$darker-yellow: #F57F17  !default; 
+
+$lighter-brown: #BCAAA4  !default;
+$light-brown: #8D6E63  !default;
+$brown: #6D4C41  !default;
+$dark-brown: #4E342E  !default;
+$darker-brown: #3E2723  !default; 
+
+$lighter-teal: #80CBC4  !default;
+$light-teal: #26A69A  !default;
+$teal: #00BFA5 !default;
+$dark-teal: #00796B !default;
+$darker-teal: #004D40  !default;
+
+$lighter-pink: #F48FB1  !default;
+$light-pink: #EC407A  !default;
+$pink: #C51162  !default;
+$dark-pink: #C2185B  !default;
+$darker-pink: #880E4F  !default;
