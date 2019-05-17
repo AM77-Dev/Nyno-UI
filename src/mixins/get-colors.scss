@@ -1,0 +1,266 @@
+@function get-color($type, $color) {
+   
+    @if $color == "green"{
+        @if  $type == "light"{
+            @return $light-green;
+        }
+        @else{
+            @if  $type == "lighter"{
+                @return $lighter-green;
+            }
+            @else{
+                @if  $type == "dark"{
+                    @return $dark-green;
+                }
+                @else{
+                    @if  $type == "darker"{
+                        @return $darker-green;
+                    }
+                    @else{
+                        @return $green;
+                    }   
+                }
+            }
+        }
+    }
+
+    @if $color == "blue"{
+        @if  $type == "light"{
+            @return $light-blue;
+        }
+        @else{
+            @if  $type == "lighter"{
+                @return $lighter-blue;
+            }
+            @else{
+                @if  $type == "dark"{
+                    @return $dark-blue;
+                }
+                @else{
+                    @if  $type == "darker"{
+                        @return $darker-blue;
+                    }
+                    @else{
+                        @return $blue;
+                    }   
+                }
+            }
+        }
+    }
+
+    @if $color == "purple"{
+        @if  $type == "light"{
+            @return $light-purple;
+        }
+        @else{
+            @if  $type == "lighter"{
+                @return $lighter-purple;
+            }
+            @else{
+                @if  $type == "dark"{
+                    @return $dark-purple;
+                }
+                @else{
+                    @if  $type == "darker"{
+                        @return $darker-purple;
+                    }
+                    @else{
+                        @return $purple;
+                    }   
+                }
+            }
+        }
+    }
+
+    @if $color == "red"{
+        @if  $type == "light"{
+            @return $light-red;
+        }
+        @else{
+            @if  $type == "lighter"{
+                @return $lighter-red;
+            }
+            @else{
+                @if  $type == "dark"{
+                    @return $dark-red;
+                }
+                @else{
+                    @if  $type == "darker"{
+                        @return $darker-red;
+                    }
+                    @else{
+                        @return $red;
+                    }   
+                }
+            }
+        }
+    }
+
+    @if $color == "orange"{
+        @if  $type == "light"{
+            @return $light-orange;
+        }
+        @else{
+            @if  $type == "lighter"{
+                @return $lighter-orange;
+            }
+            @else{
+                @if  $type == "dark"{
+                    @return $dark-orange;
+                }
+                @else{
+                    @if  $type == "darker"{
+                        @return $darker-orange;
+                    }
+                    @else{
+                        @return $orange;
+                    }   
+                }
+            }
+        }
+    }
+
+    @if $color == "yellow"{
+        @if  $type == "light"{
+            @return $light-yellow;
+        }
+        @else{
+            @if  $type == "lighter"{
+                @return $lighter-yellow;
+            }
+            @else{
+                @if  $type == "dark"{
+                    @return $dark-yellow;
+                }
+                @else{
+                    @if  $type == "darker"{
+                        @return $darker-yellow;
+                    }
+                    @else{
+                        @return $yellow;
+                    }   
+                }
+            }
+        }
+    }
+
+    @if $color == "brown"{
+        @if  $type == "light"{
+            @return $light-brown;
+        }
+        @else{
+            @if  $type == "lighter"{
+                @return $lighter-brown;
+            }
+            @else{
+                @if  $type == "dark"{
+                    @return $dark-brown;
+                }
+                @else{
+                    @if  $type == "darker"{
+                        @return $darker-brown;
+                    }
+                    @else{
+                        @return $brown;
+                    }   
+                }
+            }
+        }
+    }
+
+    @if $color == "teal"{
+        @if  $type == "light"{
+            @return $light-teal;
+        }
+        @else{
+            @if  $type == "lighter"{
+                @return $lighter-teal;
+            }
+            @else{
+                @if  $type == "dark"{
+                    @return $dark-teal;
+                }
+                @else{
+                    @if  $type == "darker"{
+                        @return $darker-teal;
+                    }
+                    @else{
+                        @return $teal;
+                    }   
+                }
+            }
+        }
+    }
+
+    @if $color == "pink"{
+        @if  $type == "light"{
+            @return $light-pink;
+        }
+        @else{
+            @if  $type == "lighter"{
+                @return $lighter-pink;
+            }
+            @else{
+                @if  $type == "dark"{
+                    @return $dark-pink;
+                }
+                @else{
+                    @if  $type == "darker"{
+                        @return $darker-pink;
+                    }
+                    @else{
+                        @return $pink;
+                    }   
+                }
+            }
+        }
+    }
+
+    @if $color == "light"{
+        @if  $type == "light"{
+            @return $light-light;
+        }
+        @else{
+            @if  $type == "lighter"{
+                @return $lighter-light;
+            }
+            @else{
+                @if  $type == "dark"{
+                    @return $dark-light;
+                }
+                @else{
+                    @if  $type == "darker"{
+                        @return $darker-light;
+                    }
+                    @else{
+                        @return $light;
+                    }   
+                }
+            }
+        }
+    }
+
+    @if $color == "dark"{
+        @if  $type == "light"{
+            @return $light-dark;
+        }
+        @else{
+            @if  $type == "lighter"{
+                @return $lighter-dark;
+            }
+            @else{
+                @if  $type == "dark"{
+                    @return $dark-dark;
+                }
+                @else{
+                    @if  $type == "darker"{
+                        @return $darker-dark;
+                    }
+                    @else{
+                        @return $dark;
+                    }   
+                }
+            }
+        }
+    }
+}
