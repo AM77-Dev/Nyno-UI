@@ -2,170 +2,158 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'],
-.btn{
+.btn {
     border: none;
     border-radius: $border-radius;
     margin: 0;
     background: $light;
     transition: all 250ms ease;
     cursor: pointer;
-    color: #333333;
+    color: $dark;
     font-family: "Source sans pro";
-    padding: 0.5em 1em;
+    padding: 0.5em 1.5em;
     font-size: 1em;
 
-    //sizes
-    &.btn-l{
+    &.btn-s {
+        font-size: $small-font;
+    }
+
+    &.btn-m {
+        font-size: $medium-font;
+    }
+
+    &.btn-l {
         font-size: $large-font;
     }
 
-    &.btn-m{
-        font-size: $large-font;
-    }
-
-    &.btn-s{
-        font-size: $large-font;
-    }
-
-    // borders
-    &.square{
+    &.square {
         border-radius: 0
     }
-    
-    &.round{
+
+    &.round {
         border-radius: 2em
     }
 
-    &.border{
+    &.border {
         border: 1px solid $dark
     }
 
-    &.border-d{
+    &.border-d {
         border: 1px dashed $dark
     }
 
-    // actions
-    &:active{
+    &:active {
         outline: none;
     }
 
-    
-    @each $name, $color in $all-colors {
-        &.#{$name}{
-            background: get-color("", $name);
-            &._dark:hover{
-                background: get-color("dark", $name);
-                color: $light
-            }
-    
-            &._light:hover{
-                background: get-color("light", $name);
-                color: $dark
-            }
+
+    &.close {
+        position: relative;
+        padding: $medium-font;
+        border-radius: 100%;
+
+        &::before, &::after {
+            content: "";
+            width: 70%;
+            height: 4px;
+            background: $light;
+            border-radius: $border-radius;
+            position: absolute;
+            left: 0;
+            transform-origin: left center;
         }
-    
-        &.dark-#{$name}{
-            background: get-color("dark", $name);
-            color: $light;
-            &._dark:hover{
-                background: get-color("darker", $name);
-                color: $lighter
-            }
-    
-            &._light:hover{
-                background: get-color("light", $name);
-                color: $darker
-            }
+
+        &::before{
+            top: 0;
+            transform: rotate(45deg) translateX(45%) translateY(-1.5px);
         }
-    
-        &.light-#{$name}{
-            background: get-color("light", $name);
-            &._dark:hover{
-                background: get-color("dark", $name);
-                color: $lighter
-            }
-    
-            &._light:hover{
-                background: get-color("lighter", $name);
-                color: $darker
-            }
+
+        &::after{
+            bottom: 0;
+            transform: rotate(-45deg) translateX(45%) translateY(1.5px);
         }
     }
 
-//
-//    &.close{
-//        position: relative;
-//        padding: 0;
-//       width: 10px;
-//        height: 10px;
-//
-//        &::after{
-//            position: absolute;
-//            content: "";
-//           width: 100%;
-//          height: 2px;
-//        background: red;
-//  }
-//    }
-//
+
+    @each $name,
+    $color in $all-colors {
+        &.#{$name} {
+            background: get-color("dark", $name);
+            color: $darker-dark;
+            border: 1px solid get-color("darker", $name);
+
+            &._dark:hover {
+                background: get-color("darker", $name);
+                color: $light;
+
+                &.close{
+                    &::before, &::after {
+                        background: get-color("lighter", $name);
+                    }
+                }
+            }
+
+            &._light:hover {
+                background: get-color("lighter", $name);
+                border: 1px solid get-color("lighter", $name);
+
+                &.close{
+                    &::before, &::after {
+                        background: get-color("darker", $name);
+                    }
+                }
+            }
+
+        }
+
+    }
 
 }
 
-.btn-o{
+.btn-o {
     border: 1px solid $light;
     background: transparent;
 
 
-    @each $name, $color in $all-colors {
-        &.#{$name}{
-            border-color: get-color("", $name);
+    @each $name,
+    $color in $all-colors {
+        &.#{$name} {
+            border-color: get-color("dark", $name);
+            color: get-color("dark", $name);
+            background: $lighter-light;
 
-            &._dark:hover{
+            &._dark:hover {
                 border-color: get-color("darker", $name);
                 background: get-color("darker", $name);
-                color: $light
+                color: $lighter-light;
+                
+                &.close{
+                    &::before, &::after {
+                        background: $light;
+                    }
+                }
             }
-        
-            &._light:hover{
-                border-color: get-color("light", $name);
-                background: get-color("light", $name);
-                color: $lighter
-            }
-        }
 
-        &.dark-#{$name}{
-            border-color: $dark-green;
-            color:  $dark-green;
-        
-            &._dark:hover{
-                border-color: get-color("darker", $name);
-                background: get-color("darker", $name);
-                color: $lighter
-            }
-        
-            &._light:hover{
-                border-color: get-color("light", $name);
-                background: get-color("light", $name);
-                color: $light
-            }
-        }
-        
-        &.light-#{$name}{
-            border-color: get-color("light", $name);
-            color:  $light-green;
-        
-            &._dark:hover{
-                border-color: get-color("dark", $name);
-                background: get-color("dark", $name);
-                color: $light;
-            }
-        
-            &._light:hover{
+            &._light:hover {
                 border-color: get-color("lighter", $name);
                 background: get-color("lighter", $name);
-                color: $light;
+                color: $darker-dark;
+
+                &.close{
+                    &::before, &::after {
+                        background: $dark;
+                    }
+                }
             }
+
+            &.close{
+                &::before, &::after {
+                    background: get-color("dark", $name);
+                }
+            }
+
         }
+
     }
 
 }
@@ -174,17 +162,17 @@ button.disabled,
 input[type='button'].disabled,
 input[type='reset'].disabled,
 input[type='submit'].disabled,
-.btn.disabled{
+.btn.disabled {
     background: $disabled;
     color: $light;
     cursor: not-allowed;
 
-    &._dark{
+    &._dark {
         background: $dark-disabled;
-        color: $darker
+        color: $darker-dark
     }
 
-    &._light{
+    &._light {
         background: $light-disabled;
         color: $light-dark;
     }
