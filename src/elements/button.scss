@@ -11,8 +11,9 @@ input[type='submit'],
     cursor: pointer;
     color: $dark;
     font-family: "Source sans pro";
-    padding: 0.5em 1.5em;
+    padding: 0.6em 1.5em;
     font-size: 1em;
+    outline: none;
 
     &.btn-s {
         font-size: $small-font;
@@ -80,7 +81,7 @@ input[type='submit'],
         &.#{$name} {
             background: get-color("dark", $name);
             color: $darker-dark;
-            border: 1px solid get-color("darker", $name);
+            border: 1px solid get-color("dark", $name);
 
             &._dark:hover {
                 background: get-color("darker", $name);
