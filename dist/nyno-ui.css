@@ -135,8 +135,9 @@ input[type=submit],
   cursor: pointer;
   color: #333333;
   font-family: "Source sans pro";
-  padding: 0.5em 1.5em;
+  padding: 0.6em 1.5em;
   font-size: 1em;
+  outline: none;
 }
 button.btn-s,
 input[type=button].btn-s,
@@ -244,7 +245,7 @@ input[type=submit].dark,
 .btn.dark {
   background: #252525;
   color: #191919;
-  border: 1px solid #191919;
+  border: 1px solid #252525;
 }
 button.dark._dark:hover,
 input[type=button].dark._dark:hover,
@@ -291,7 +292,7 @@ input[type=submit].light,
 .btn.light {
   background: #BDBDBD;
   color: #191919;
-  border: 1px solid #9E9E9E;
+  border: 1px solid #BDBDBD;
 }
 button.light._dark:hover,
 input[type=button].light._dark:hover,
@@ -338,7 +339,7 @@ input[type=submit].green,
 .btn.green {
   background: #388E3C;
   color: #191919;
-  border: 1px solid #1B5E20;
+  border: 1px solid #388E3C;
 }
 button.green._dark:hover,
 input[type=button].green._dark:hover,
@@ -385,7 +386,7 @@ input[type=submit].blue,
 .btn.blue {
   background: #303F9F;
   color: #191919;
-  border: 1px solid #1A237E;
+  border: 1px solid #303F9F;
 }
 button.blue._dark:hover,
 input[type=button].blue._dark:hover,
@@ -432,7 +433,7 @@ input[type=submit].purple,
 .btn.purple {
   background: #7B1FA2;
   color: #191919;
-  border: 1px solid #4A148C;
+  border: 1px solid #7B1FA2;
 }
 button.purple._dark:hover,
 input[type=button].purple._dark:hover,
@@ -479,7 +480,7 @@ input[type=submit].red,
 .btn.red {
   background: #D32F2F;
   color: #191919;
-  border: 1px solid #B71C1C;
+  border: 1px solid #D32F2F;
 }
 button.red._dark:hover,
 input[type=button].red._dark:hover,
@@ -526,7 +527,7 @@ input[type=submit].orange,
 .btn.orange {
   background: #E64A19;
   color: #191919;
-  border: 1px solid #BF360C;
+  border: 1px solid #E64A19;
 }
 button.orange._dark:hover,
 input[type=button].orange._dark:hover,
@@ -573,7 +574,7 @@ input[type=submit].yellow,
 .btn.yellow {
   background: #FBC02D;
   color: #191919;
-  border: 1px solid #F57F17;
+  border: 1px solid #FBC02D;
 }
 button.yellow._dark:hover,
 input[type=button].yellow._dark:hover,
@@ -620,7 +621,7 @@ input[type=submit].brown,
 .btn.brown {
   background: #4E342E;
   color: #191919;
-  border: 1px solid #3E2723;
+  border: 1px solid #4E342E;
 }
 button.brown._dark:hover,
 input[type=button].brown._dark:hover,
@@ -667,7 +668,7 @@ input[type=submit].teal,
 .btn.teal {
   background: #00796B;
   color: #191919;
-  border: 1px solid #004D40;
+  border: 1px solid #00796B;
 }
 button.teal._dark:hover,
 input[type=button].teal._dark:hover,
@@ -714,7 +715,7 @@ input[type=submit].pink,
 .btn.pink {
   background: #C2185B;
   color: #191919;
-  border: 1px solid #880E4F;
+  border: 1px solid #C2185B;
 }
 button.pink._dark:hover,
 input[type=button].pink._dark:hover,
