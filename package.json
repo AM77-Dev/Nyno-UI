@@ -1,0 +1,31 @@
+{
+  "name": "nyno_ui",
+  "version": "1.0.1",
+  "description": "A complete CSS framework based on flexbox.",
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "sass",
+    "flexbox",
+    "responsive",
+    "framework"
+  ],
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "node-sass --output-style expanded --source-map true src/nyno-ui.sass dist/nyno-ui.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AM77-Dev/Nynoo-UI.git"
+  },
+  "author": "AM-77",
+  "bugs": {
+    "url": "https://github.com/AM77-Dev/Nynoo-UI/issues"
+  },
+  "homepage": "https://github.com/AM77-Dev/Nynoo-UI#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
