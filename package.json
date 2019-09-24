@@ -1,6 +1,6 @@
 {
-  "name": "nyno_ui",
-  "version": "1.0.1",
+  "name": "nyno-ui",
+  "version": "1.0.2",
   "description": "A complete CSS framework based on flexbox.",
   "license": "MIT",
   "keywords": [
