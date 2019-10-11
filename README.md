@@ -57,7 +57,7 @@ There is **no** JavaScript included. People generally want to use their own JS i
 
 ## Documentation
 
-The documentation resides in the [docs](docs) directory, and is built with the [Docsify](https://docsify.js.org) tool.
+The documentation resides in the docs directory, and is built with the [Docsify](https://docsify.js.org) tool.
 
 Browse the [online documentation here.](https://docs.medamine.now.sh/#/)
 
