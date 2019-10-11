@@ -29,6 +29,17 @@ You can use the minifed version:
 import 'nyno-ui/dist/nyno-ui.min.css'
 ```
 
+**or**
+
+You can use direct links
+##### unpgk
+```html
+<link rel="stylesheet" href="//unpkg.com/nyno-ui/dist/nyno-ui.min.css"> 
+```
+##### github
+```html
+<link rel="stylesheet" href="https://raw.githubusercontent.com/AM77-Dev/Nyno-UI/master/dist/nyno-ui.min.css"> 
+
 ## CSS only
 
 Nyno-UI is a **CSS only** framework. It's just the style layer in a single CSS file on top of your logic: [Nyno-UI.css](https://github.com/AM77-Dev/Nyno-UI/blob/master/dist/nyno-ui.css)
