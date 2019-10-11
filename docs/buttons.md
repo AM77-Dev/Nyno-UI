@@ -29,7 +29,7 @@
 ```
 <button class="btn-l">CLICK ME</button>
 
-## Button types
+## Button Types
 
 ### O Button
 ```html
@@ -107,3 +107,4 @@ Check [The Colors Page](/colors) to see what colors are availlable to use.
 <button class="disabled">DISABLED BUTTON</button>
 <button class="disabled _dark">DARK DISABLED BUTTON</button>
 <button class="disabled _light">LIGHT DISABLED BUTTON</button>
+

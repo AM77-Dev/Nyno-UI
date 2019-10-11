@@ -2,3 +2,5 @@
 * [Layouts](layouts.md)
 * [Colors](colors.md)
 * [Buttons](buttons.md)
+* [Inputs](inputs.md)
+* [Components](components.md)

@@ -30,10 +30,11 @@ import 'nyno-ui/dist/nyno-ui.min.css'
 ```
 
 **or**
+
 You can use direct links
 ##### unpgk
 ```html
-<link rel="stylesheet" href="//unpkg.com/nyno-ui@1.0.2/dist/nyno-ui.min.css"> 
+<link rel="stylesheet" href="//unpkg.com/nyno-ui/dist/nyno-ui.min.css"> 
 ```
 ##### github
 ```html
@@ -57,8 +58,6 @@ There is **no** JavaScript included. People generally want to use their own JS i
 ## Documentation
 
 The documentation resides in the [docs](docs) directory, and is built with the [Docsify](https://docsify.js.org) tool.
-
-Browse the [online documentation here.](https://docs.medamine.now.sh/#/)
 
 ## Contribution
 

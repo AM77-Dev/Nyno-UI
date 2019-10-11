@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Nyno_UI</title>
@@ -7,12 +8,140 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
-  <link rel="stylesheet" href="//unpkg.com/nyno-ui@1.0.2/dist/nyno-ui.min.css"> 
+  <link rel="stylesheet" href="//unpkg.com/nyno-ui@1.0.2/dist/nyno-ui.min.css">
 
   <link rel="shortcut icon" href="https://github.githubassets.com/images/icons/emoji/unicode/1f315.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <style>
+    body {
+        display: block;
+    }
+    input{
+      outline: none !important;
+      font-family: "source sans pro";
+    }
+    .loading {
+      display: block !important;
+      width: 100% !important;
+      height: 100% !important;
+      position: absolute !important;
+      top: 0px !important;
+      left: 0px !important;
+    }
+
+    .loading .hexagon {
+      width: 104px !important;
+      height: 60px !important;
+      background-color: #19C47A !important;
+      border-color: #19C47A !important;
+      position: absolute !important;
+      display: inline-block !important;
+      top: calc(50% - 60px) !important;
+      left: calc(50% - 56px) !important;
+      transform-origin: center !important;
+    }
+
+    .loading .hexagon.outer {
+      animation: _rotate_outer 5000ms linear infinite forwards running !important;
+    }
+
+    @keyframes _rotate_outer {
+      0% {
+        transform: rotate(0deg) !important;
+        background-color: #19C47A !important;
+        border-color: #19C47A !important;
+      }
+
+      20% {
+        background-color: #A48F28 !important;
+        border-color: #A48F28 !important;
+      }
+
+      40% {
+        background-color: #EC5177 !important;
+        border-color: #EC5177 !important;
+      }
+
+      60% {
+        background-color: #C400EC !important;
+        border-color: #C400EC !important;
+      }
+
+      80% {
+        background-color: #39E7DF !important;
+        border-color: #39E7DF !important;
+      }
+
+      100% {
+        transform: rotate(360deg) !important;
+        background-color: #19C47A !important;
+        border-color: #19C47A !important;
+      }
+    }
+
+    .loading .hexagon:before {
+      content: " " !important;
+      width: 0 !important;
+      height: 0 !important;
+      border-bottom: 30px solid !important;
+      border-color: inherit !important;
+      border-left: 52px solid transparent !important;
+      border-right: 52px solid transparent !important;
+      position: absolute !important;
+      top: -30px !important;
+    }
+
+    .loading .hexagon:after {
+      content: "" !important;
+      width: 0 !important;
+      position: absolute !important;
+      bottom: -30px !important;
+      border-top: 30px solid !important;
+      border-color: inherit !important;
+      border-left: 52px solid transparent !important;
+      border-right: 52px solid transparent !important;
+    }
+
+    .loading .hexagon.inner {
+      transform-origin: center !important;
+      background-color: #FFFFFF !important;
+      border-color: #FFFFFF !important;
+      top: calc(50% - 30px) !important;
+      left: calc(50% - 52px) !important;
+      z-index: 1 !important;
+      animation: _rotate_inner 5000ms linear infinite forwards running !important;
+    }
+
+    @keyframes _rotate_inner {
+      0% {
+        transform: rotate(0deg)
+      }
+
+      100% {
+        transform: rotate(360deg)
+      }
+    }
+
+    .loading p {
+      position: absolute !important;
+      display: inline-block !important;
+      top: calc(50% - 40px) !important;
+      left: calc(50% - 38px) !important;
+      font-weight: 700 !important;
+    }
+  </style>
+
 </head>
+
 <body>
-  <div id="app">Please wait...</div>
+  <div id="app">
+    <div class="loading">
+      <div class="hexagon outer">
+        <div class="hexagon inner"></div>
+      </div>
+      <p>Loading ...</p>
+    </div>
+  </div>
   <script>
     window.$docsify = {
       name: 'Nyno_UI',
@@ -21,10 +150,10 @@
       subMaxLevel: 3,
       coverpage: true,
       onlyCover: false,
-      
-    }
 
+    }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 </body>
+
 </html>

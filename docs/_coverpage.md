@@ -4,9 +4,9 @@
 
 > A complete CSS framework
 
-- Based on flexbox.
-- Multiple themes.
-- Responsive.
+- Responsive layouts based on flexbox.
+- Multiple colors.
+
 
 [GitHub](https://github.com/AM77-Dev/Nyno-UI)
 [Getting Started](#Nyno-UI)
