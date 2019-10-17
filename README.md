@@ -39,6 +39,7 @@ You can use direct links
 ##### github
 ```html
 <link rel="stylesheet" href="https://raw.githubusercontent.com/AM77-Dev/Nyno-UI/master/dist/nyno-ui.min.css"> 
+```
 
 ## CSS only
 
@@ -67,6 +68,6 @@ Feel free to raise an [issue](https://github.com/AM77-Dev/Nyno-UI/issues) or sub
 
 ## Copyright and license
 
-Code copyright 2019 Jeremy Thomas. Code released under [the MIT license](https://github.com/AM77-Dev/Nyno-UI/blob/master/LICENSE).
+Code copyright 2019 AM-77. Code released under [the MIT license](https://github.com/AM77-Dev/Nyno-UI/blob/master/LICENSE).
 
 [npm-link]: https://www.npmjs.com/package/nyno-ui
